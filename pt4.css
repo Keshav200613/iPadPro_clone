@@ -1,0 +1,343 @@
+.pausebuttonvid2 {
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+.textcont {
+    opacity: 0.8;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlight {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.back {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.column1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stat {
+    padding-top: 30px;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.column2 {
+    width: 30%;
+    transform: translate(180px, -15px);
+}
+.modal-copy {
+    font-size: 20px;
+    color: grey;
+}
+
+.container video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.apple {
+    display: inline-flex;
+    font-size: 500px;
+    position: relative;
+    left: 11.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoom-out {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+}
+.OS {
+    transform: translateY(1800px);
+    color: white;
+}
+.OS_hd {
+    position: relative;
+    left: 27vw;
+    font-size: 70px;
+    font-weight: bold;
+}
+.osimgcl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.osdesc {
+    transform: translateY(-420px);
+    display: flex;
+    gap: 130px;
+    position: absolute;
+    left: 27vw;
+}
+.osdesc1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 21px;
+    color: gray;
+    opacity: 0.8;
+}
+.osdesc2 {
+    font-size: 18px;
+    color: gray;
+    opacity: 0.8;
+}
+
+.whitesm {
+    display: flex;
+    gap: 10px;
+}
+.whitesmw {
+    color: white;
+    opacity: 1;
+}
+.pencil {
+    transform: translateY(1900px);
+}
+.pencilhd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.containerpencil {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencilvid {
+    width: 40%;
+}
+
+.pencildesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 21px;
+    color: #a0a0a0;
+    opacity: 0.8;
+    font-weight: 600;
+}
+.pencillnk {
+    transform: translateY(20px);
+    color: #318ce7;
+    opacity: 1;
+}
+.pencillnk1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.lnksub:hover {
+    text-decoration: underline;
+}
+.keyboard {
+    transform: translateY(2300px);
+}
+.keyboardhd {
+    position: relative;
+    left: 27vw;
+    font-size: 70px;
+    font-weight: bold;
+}
+.keyboarddesc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 27vw;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    gap: 2px;
+    font-size: 22px;
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+.keyboardlnk {
+    font-size: 21px;
+    position: absolute;
+    left: 27vw;
+    color: #318ce7;
+    opacity: 1;
+}
+.keyboardvid {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recording {
+    transform: translateY(2700px);
+}
+.recorddesc {
+    display: flex;
+    gap: 30vw;
+}
+.recordinghd {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    left: 30vw;
+}
+.recordingdesc1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 57vw;
+    padding-bottom: 20px;
+    gap: 2px;
+    font-size: 22px;
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+.rcrdframe {
+    padding-top: 350px;
+    width: 1920px;
+    transform: translateX(-100px);
+}
+.recordingvid {
+    display: flex;
+    float: right;
+    padding-right: 40px;
+    transform: translateY(-80vh);
+}
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .rcrdframe {
+        transform: translateX(-300px);
+    }
+    .recordingvid {
+        transform: translate(200px, -96vh);
+    }
+}
+
+.rcrdflx {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding-top: 100px;
+}
+.rcrdflx1 {
+    display: flex;
+    position: relative;
+    left: 30vw;
+    gap: 10vw;
+    font-size: 21px;
+    width: 50vw;
+}
+.grytxt {
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+.rcrdflx2 {
+    display: flex;
+    position: relative;
+    left: 30vw;
+    width: 60vw;
+    gap: 12.7vw;
+    font-size: 21px;
+}
+.connect {
+    transform: translateY(2900px);
+}
+.connecthd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.connectvid {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.connectflx {
+    padding-top: 50px;
+    display: flex;
+    gap: 10vw;
+    padding-bottom: 300px;
+}
+.connectflx1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 3px;
+    color: #a0a0a0;
+    opacity: 0.8;
+    font-size: 21px;
+    left: 30vw;
+}
+.connectflx2 {
+    isplay: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #a0a0a0;
+    opacity: 0.8;
+    font-size: 21px;
+    position: relative;
+    left: 30vw;
+}
+.lrgwt1 {
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.lrgwt2 {
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+    padding-top: 30px;
+}
