@@ -1,0 +1,160 @@
+body {
+    color: white;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.txt1 {
+    padding-bottom: 110vh;
+}
+.allshown {
+    overflow:;
+    padding-bottom: 200vh;
+}
+.mainflxboxpopup2 {
+    transform: translateY(5%);
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vh;
+    width: 76%;
+}
+
+.mainflxboxpopup2part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.heading1popup2 {
+    font-size: 60px;
+    font-weight: 90%;
+    padding-bottom: 8vh;
+}
+
+.popup2img1 {
+    width: 100%;
+}
+
+.mainflxboxpopup2part2 {
+    width: 100%;
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    padding-top: 15vh;
+}
+
+.popup2img2 {
+    width: 55%;
+    padding-left: 10vh;
+}
+
+.mainflxboxpopup2part2_txt {
+    transform: translate(-10vh, 2vh);
+}
+
+.popup2part2head {
+    font-size: 65px;
+}
+
+.popup2part2headcnt {
+    padding-bottom: 5vh;
+}
+
+.popup2part2p {
+    color: darkgray;
+    font-size: 25px;
+    opacity: 0.6;
+}
+
+.popup2part2pwhite1 {
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.popup2part2pwhite2 {
+    padding-right: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.popup2part2pm1 {
+    display: flex;
+}
+
+.mainflxboxpopup2part3 {
+    padding-top: 5vh;
+}
+
+.popup2part3head3 {
+    font-size: 60px;
+}
+
+.popup2part3imgcnt {
+    display: flex;
+    gap: 50px;
+}
+
+.popup2part3img_txt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+.popup2part3img1 {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.popup2part3img2 {
+    border-radius: 20px;
+    width: 95%;
+}
+
+.popup2part3txt {
+    padding-top: 3vh;
+    color: darkgray;
+    font-size: 20px;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.popup2part3txtwhite {
+    display: flex;
+}
+
+.popup2part3_white {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    opacity: 1;
+}
+.closepopup2 {
+    border-radius: 100%;
+    border: transparent;
+    background-color: rgb(47, 47, 47);
+    font-size: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.close_btnpop2 {
+    bottom: 10vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
