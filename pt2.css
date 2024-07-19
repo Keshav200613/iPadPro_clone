@@ -727,3 +727,12 @@ nav {
     display: flex;
     justify-self: start;
 }
+.endheading{
+    color: rgb(134, 134, 139);
+    padding-left: 50px;
+    margin-bottom: 70px;
+  font-size: 48px;
+  line-height: 1.0834933333;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}

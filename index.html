@@ -20,13 +20,12 @@
             background-color: black;
             font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
         }
-
+        
 
 
         .flex_btns_leftright {
             gap: 15px;
             transform: translateY(2950px);
-
             display: flex;
             justify-content: right;
             align-items: right;
@@ -106,6 +105,7 @@
             display: none;
         }*/
         .allshown{
+            position: relative;
             transition: -webkit-filter 2s;
             transition: -moz-filter 2s;
             transition: -o-filter 2s;
@@ -120,6 +120,7 @@
 
 
         }
+        
     </style>
 
     <link rel="stylesheet " href="pt2.css ">
@@ -899,7 +900,7 @@
                 </div>
             </div>
         </div  >
-        <div class="endhd1">Why Apple is the best</div>
+        <div class="endhd1" >Why Apple is the best</div>
         <div class="endhd1">
             <div>place to buy iPad.</div>
             <a class="endlnk" href="https://www.apple.com/shop/buy-ipad">
@@ -909,57 +910,63 @@
         </div>
         <div class="endhd1">
             <div class="endplacards">
-                <button type="button" class="endplacard">
+                <button type="button" id="popupbutton1" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo1.png">
                     <div class="placard1hd">Pay over time,</div>
                     <div class="placard1hd"> interest‑free.</div>
                     <p class="placard1p">When you choose to check out with Apple Card Monthly Installments.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
-                <button type="button" class="endplacard">
+                </button>
+                
+                <button type="button" id="popupbutton2" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo2.png">
                     <div class="placard1hd">Save up to $565</div>
                     <div class="placard1hd"> with Appple Trade In.</div>
                     <p class="placard1p">Get credit toward your next iPad when you trade in an eligible device.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
                 </button  >
-                <button type="button" class="endplacard">
+                <button type="button" id="popupbutton3" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo3.png">
                     <div class="placard1hd">Save on a new iPad with education pricing.</div>
                     <p class="placard1p">Available to college students and educators.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
                 </button  >
-                <button type="button" class="endplacard">
+                <button type="button" id="popupbutton4" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo4.png">
                     <div class="placard1hd">Get flexible delivery and easy pickup.</div>
                     <p class="placard1p">Choose two‑hour delivery from an Apple Store, free delivery or easy pickup options.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
-                <button type="button" class="endplacard">
+                </button>
+                <button type="button" id="popupbutton5" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo5.png">
-                    <div class="placard1hd">Personalize your iPad for free.</div>
+                    <div class="placard1hd">Personalize your <br>iPad for free.</div>
                     <p class="placard1p">Engrave your new iPad with a mix of emoji, names, initials, and numbers.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
-                <button type="button" class="endplacard">
+                </button>
+                <button type="button" id="popupbutton6" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo6.png">
                     <div class="placard1hd">Shop live with a Specialist.</div>
                     <p class="placard1p">Let us guide you live over video and answer all of your questions.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
-                <button type="button" class="endplacard">
+                </button>
+                <button type="button" id="popupbutton7" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo7.png">
                     <div class="placard1hd">Get to know your new iPad.</div>
                     <p class="placard1p">GLearn how to get the most out of your new iPad with a free one-on-one Personal Session.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
-                <button type="button" class="endplacard">
+                </button>
+                <button type="button" id="popupbutton8" class="endplacard">
                     <img class="placardlogo1" src="resources/endplacardlogo8.png">
                     <div class="placard1hd">Explore a shopping experience designed around you.</div>
                     <p class="placard1p">Use the Apple Store app to get a more personal way to shop.</p >
                     <div class="openbtnpl"><i class="fa-solid fa-plus fa" style="color: #606060;"></i></i></div>
-                </button  >
+                </button>
             </div>
+            
+        </div>
+        <div class="flex_btns_leftright2" >
+            <button class="flex_btns_left2"><i class="fa-solid fa-angle-left " style="color: #ffffff; "></i></button>
+            <button class="flex_btns_right2"><i class="fa-solid fa-angle-right " style="color: #ffffff; "></i></button>
         </div>
         <div class="endhd1 bighd">
             <div>Keep exploring iPad.</div>
@@ -1084,7 +1091,168 @@
                 </div>
             </div>
         </div>
-     </section >
+        <div style="transform: translate(105px);padding-top:150px;">
+        <h2 class="endheading">iPad</h2>
+        <div style="display: flex;">
+            <ul class="content">
+               <span class="start padding">Explore iPad</span>
+                <a href="">Explore All iPad</a>
+                <a href="">iPad Pro</a>
+                <a href="">iPad Air</a>
+                <a href="">iPad</a>
+                <a href="">iPad mini</a>
+                <a href="">Apple Pencil</a>
+                <a href="">Keyboard</a>
+                <a href="" class="start padding pt-30">Compare iPad</a>
+                <a href="" class="start">Why iPad</a>
+            </ul>
+            <ul class="content">
+                <span class="start padding">Shop iPad</span>
+                <a class="start pt-7" href="">Shop iPad</a>
+                <a class="start pt-7" href="">iPad Accessories</a>
+                <a class="start pt-7" href="">Ways to Buy</a>
+            </ul>
+            <ul class="content">
+                <span class="start padding">More from iPad</span>
+                <a class="start pt-7" href="">iPad Support</a>
+                <a class="start pt-7" href="">AppleCare+ for iPad</a>
+                <a class="start pt-7" href="">iPadOS 17</a>
+                <a class="start pt-7" href="">Apps by Apple</a>
+                <a class="start pt-7" href="">iCloud+</a>
+                <a class="start pt-7" href="">Education</a>
+    
+            </ul>
+        </div>
+    </div>
+    <div class="terms-conditions">
+    <div style="width: 980px;">
+    <div class="basics">*Listed pricing is Maximum Retail Price (inclusive of all taxes).</div>
+    <div class="basics"><sup><small>‡</small> </sup>No Cost EMI is available with the purchase of an eligible product made using eligible cards on 3- or 6-month tenures from most leading banks. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your bank, subject to your bank’s terms and conditions. Minimum order spend applies as per your card-issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card-issuing bank. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply.
+    </div>
+    <div class="basics">
+    Representative example: Based on a 6-month tenure. ₹79900.00 total cost includes 15% p.a. and No Cost EMI savings of ₹3380.00, paid over 6 months as six monthly payments of ₹13317.00.
+    </div>
+    <div class="basics">
+    **Apple education pricing is available to current and newly accepted university students, parents buying for university students, and teachers and staff at all levels. For more information, visit apple.com/in-edu/store.
+    </div>
+    <div class="basics">
+    ◊Qualified purchasers can receive promotion savings when they purchase an eligible product with promotion product at a qualifying location. Only one promotion product per eligible product per qualified purchaser. Offer is subject to availability. Subject to terms and conditions herein.
+    </div>
+    <div>
+    <ul class="deco">
+    <li class="basics">Accessories are sold separately.</li>
+    <li class="basics">The 13″ iPad Pro is 5.1 mm and the 11″ iPad Pro is 5.3 mm.</li>
+    <li class="basics">Testing conducted by Apple in March and April 2024 using pre-production iPad Pro 13″ (M4) units with 10‑core CPU and 16GB of RAM, as well as production iPad Pro 12.9″ (6th generation) units with 8‑core CPU and 16GB of RAM. Pre-release Octane X 2024.1 (a4) 4-09-2024 for iPad tested using a scene with 7,80,000 meshes and 27 million unique primitives, utilising hardware-accelerated ray tracing on M4‑based systems and software-based ray tracing on all other units. Performance tests are conducted using specific iPad units and reflect the approximate performance of iPad Pro.</li>
+    <li class="basics">Testing conducted by Apple in March and April 2024 using pre-production iPad Pro 13” (M4) units with 10‑core CPU and 16GB of RAM, as well as production iPad Pro 12.9” (6th generation) units with 8‑core CPU and 16GB of RAM. Tested with Affinity Photo 2 v2.4.0.2301 using the built‑in benchmark version 21000. Performance tests are conducted using specific iPad units and reflect the approximate performance of iPad Pro.</li>
+    <li class="basics">Testing conducted by Apple in March and April 2024 using pre-production iPad Pro 11″ (M4) and iPad Pro 13″ (M4) units. Testing consisted of full battery discharge while performing each of the following tasks: video playback and Internet browsing using Wi‑Fi or cellular data network (cellular models subscribed to LTE and 5G carrier networks). Video content was a repeated 2‑hour 23‑minute movie purchased from the iTunes Store. Internet over Wi‑Fi and cellular data network tests were conducted using dedicated web servers, browsing snapshot versions of 20 popular web pages. All settings were default except: Wi‑Fi was associated with a network (except for Internet browsing over cellular data network); the Wi‑Fi feature Ask to Join Networks and Auto-Brightness were turned off; Brightness was set to 50%; and WPA2 encryption was enabled. Battery life depends on device settings, usage, network and many other factors. Battery tests are conducted using specific iPad units; actual results may vary.
+    </li>
+    <li class="basics">iPad Pro models with 256GB or 512GB storage feature the Apple M4 chip with 9‑core CPU. iPad Pro models with 1TB or 2TB storage feature the Apple M4 chip with 10‑core CPU.</li>
+    <li class="basics">
+    Coming later this year and requires Final Cut Pro for iPad 2.</li>
+    <li class="basics">Wi‑Fi 6E is available in countries and regions where supported. Data plan is required. 5G is available in selected markets and through selected carriers. Speeds vary based on site conditions and carrier. For details on 5G support, contact your carrier and see apple.com/in/ipad/cellular.</li>
+    <li class="basics">Not all carriers support eSIM. See your carrier for more details. For models A3007 and A3006, contact China Unicom for more details.</li>
+    <li class="basics">Based on retail packaging as shipped by Apple. Breakdown of the US retail packaging by weight. Adhesives, inks and coatings are excluded from our calculations of plastic content and packaging weight.</li>
+    <li class="basics">Mac, iPad and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad and Apple Watch. Trade‑in values will vary based on the condition, year and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade‑in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel or limit the quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade‑in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+    <li class="basics">You can return your iPad even if you engrave it. And when you’re ready to upgrade, it won’t change your trade‑in value.</li>
+    <li class="basics">The displays have rounded corners. When measured diagonally as a rectangle, the 13″ iPad Pro is 33.02 cm (13″), the 11″ iPad Pro is 28.22 cm (11.1″), the 13″ iPad Air is 32.78 cm (12.9″), the 11″ iPad Air is 27.59 cm (10.86″), iPad (10th generation) is 27.58 cm (10.86″) and the iPad mini is 21.08 cm (8.3″). Actual viewable area is less.</li>
+</ul>
+</div>
+   <div class="basics"> Apps are available on the App Store. Title availability is subject to change.</div>
+    <div class="basics">Zbrush for iPad is coming to the App Store later this year.</div>
+    <div class="basics">Architectural Project is designed by Alberto Beitia using Trimble SketchUp.</div>
+    <hr style="margin-top: 20px;margin-bottom:20px;">
+    <div class="footer">
+        <ul class="content-footer">
+            <li class="font-footer"><strong>Shop and Learn</strong></li>
+            <li class="font-footer"><a href="">Store</a></li>
+            <li class="font-footer"><a href="">Mac</a></li>
+            <li class="font-footer"><a href="">iPad</a></li>
+            <li class="font-footer"><a href="">iPhone</a></li>
+            <li class="font-footer"><a href="">Watch</a></li>
+            <li class="font-footer"><a href="">Vision</a></li>
+            <li class="font-footer"><a href="">AirPods</a></li>
+            <li class="font-footer"><a href="">TV & Home</a></li>
+            <li class="font-footer"><a href="">AirTag</a></li>
+            <li class="font-footer"><a href="">Accessories</a></li>
+            <li class="font-footer m-25"><a href="">Gift Cards</a></li>
+            <li class="font-footer"><strong>Apple Wallet</strong></li>
+            <li class="font-footer"><a href="">Wallet</a></li>
+            <li class="font-footer"><a href="">Apple Card</a></li>
+            <li class="font-footer"><a href="">Apple Pay</a></li>
+            <li class="font-footer last"><a href="">Apple Cash</a></li>
+        </ul>
+        <ul class="content-footer">
+            <li class="font-footer"><strong>Account</strong></li>
+            <li class="font-footer"><a href="">Manage Your Apple ID</a></li>
+            <li class="font-footer"><a href="">Apple Store Account</a></li>
+            <li class="font-footer m-25"><a href="">iCloud.com</a></li>
+            <li class="font-footer "><strong>Entertainment</strong></li>
+            <li class="font-footer"><a href="">Apple One</a></li>
+            <li class="font-footer"><a href="">Apple TV+</a></li>
+            <li class="font-footer"><a href="">Apple Music</a></li>
+            <li class="font-footer"><a href="">Apple Arcade</a></li>
+            <li class="font-footer"><a href="">Apple Fitness+</a></li>
+            <li class="font-footer"><a href="">Apple News+</a></li>
+            <li class="font-footer"><a href="">Apple Podcasts</a></li>
+            <li class="font-footer"><a href="">Apple Books</a></li>
+            <li class="font-footer last"><a href="">App Store</a></li>
+        </ul>
+        <ul class="content-footer">
+            <li class="font-footer"><strong>Apple Store</strong></li>
+            <li class="font-footer"><a href="">Find a Store</a></li>
+            <li class="font-footer"><a href="">Genius Bar</a></li>
+            <li class="font-footer"><a href="">Today at Apple</a></li>
+            <li class="font-footer"><a href="">Apple Camp</a></li>
+            <li class="font-footer"><a href="">Apple Store App</a></li>
+            <li class="font-footer"><a href="">Refurbished</a></li>
+            <li class="font-footer"><a href="">Financing</a></li>
+            <li class="font-footer"><a href="">Apple Trade In</a></li>
+            <li class="font-footer"><a href="">Order Status</a></li>
+            <li class="font-footer last"><a href="">Shopping Help</a></li>
+        </ul>
+        <ul class="content-footer">
+            <li class="font-footer"><strong>For Business</strong></li>
+            <li class="font-footer"><a href="">Apple and Business</a></li>
+            <li class="font-footer m-25"><a href="">Shop for Business</a></li>
+            <li class="font-footer"><strong>For Education</strong></li>
+            <li class="font-footer"><a href="">Apple and Education</a></li>
+            <li class="font-footer"><a href="">Shop for K-12</a></li>
+            <li class="font-footer m-25"><a href="">Shop for College</a></li>
+            <li class="font-footer"><strong>For Healthcare</strong></li>
+            <li class="font-footer"><a href="">Apple in Healthcare</a></li>
+            <li class="font-footer"><a href="">Mac in Healthcare</a></li>
+            <li class="font-footer"><a href="">Health on Apple Watch</a></li>
+            <li class="font-footer m-25"><a href="">Health Records on iPhone and <br>iPad</a></li>
+            <li class="font-footer"><strong>For Government</strong></li>
+            <li class="font-footer"><a href="">Shop for Government</a></li>
+            <li class="font-footer last"><a href="">Shop for Veterans and Military</a></li>
+        </ul>
+        <ul class="content-footer">
+            <li class="font-footer"><strong>Apple Values</strong></li>
+            <li class="font-footer"><a href="">Accessibility</a></li>
+            <li class="font-footer"><a href="">Education</a></li>
+            <li class="font-footer"><a href="">Environment</a></li>
+            <li class="font-footer"><a href="">Inclusion and Diversity</a></li>
+            <li class="font-footer"><a href="">Privacy</a></li>
+            <li class="font-footer"><a href="">Racial Equity and Justice</a></li>
+            <li class="font-footer m-25"><a href="">Supply Chain</a></li>
+            <li class="font-footer"><strong>About Apple</strong></li>
+            <li class="font-footer"><a href="">Newsroom</a></li>
+            <li class="font-footer"><a href="">Apple Leadership</a></li>
+            <li class="font-footer"><a href="">Career Opportunities</a></li>
+            <li class="font-footer"><a href="">Investors</a></li>
+            <li class="font-footer"><a href="">Ethics and Compliance</a></li>
+            <li class="font-footer"><a href="">Events</a></li>
+            <li class="font-footer last"><a href="">Contact Apple</a></li>
+        </ul>
+		</div>
+        <div>More ways to shop: <a href="" class="color-a">Find an Apple Store</a>  or <a href="" class="color-a">other retailer</a> near you. Or call 1-800-MY-APPLE.</div>
+        <hr style="margin-top: 20px;margin-bottom:20px;">
+        <div style="margin-bottom:20px;">Copyright © 2024 Apple Inc. All rights reserved</div>
+    </div>
+    </div>
+    </div>
+     </section>
 
 </div>
     <div class="container_popup_vid">
@@ -1167,7 +1335,166 @@
         </div>
         <div class="close_btnpop2"<button type="button" class="closepopup2" onclick="closepopup2()"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></button></div>
     </div>
-
+    <div class="width1">
+        <div class="sticky1"><div class="closepopupdiv31"><button class="closepopup31"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+    </div>
+    <div class="grey1">
+     <div class="top-text1"> Ways to Buy</div> 
+     <div class="fontsize1"> Apple Card Monthly<br>Installments</div>
+    <div class="textpopup1">
+     Pay for your new iPad over time, interest‑free with Apple Card.◊ Simply choose to check out with Apple Card Monthly Installments as your payment option when you make your purchase and enjoy 3% Daily Cash back, all up front. Terms apply.
+     </div>
+     <div style="padding-top: 20px;">
+     <a href="" class="padding-top1">Learn more</a>
+    </div>
+    </div>
+    </div>
+    <div class="width2">
+        <div class="sticky2"><div class="closepopupdiv32"><button class="closepopup32"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+    </div>
+        <div class="grey2">
+         <div class="top-text2"> Apple Trade In</div> 
+         <div class="fontsize2"> Trade in your eligible<br>device for credit.</div>
+        <div class="textpopup2">
+            Just add a trade‑in when you choose a new product. Once your eligible device has been received and verified, we’ll credit the value to your payment method.11 Or choose to check out with Apple Card Monthly Installments and we’ll apply the credit instantly. Terms apply.
+        </div>
+         <div style="padding-top: 20px;">
+         <a href="" class="padding-top2">Learn more</a>
+        </div>
+        </div>
+        </div>
+        <div class="width3">
+            <div class="sticky3"><div class="closepopupdiv33"><button class="closepopup33"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+        </div>
+            <div class="grey3">
+             <div class="top-text3"> Education Pricing</div> 
+             <div class="fontsize3"> Shop our Education Store<br>and save.</div>
+            <div class="textpopup3">
+                You can save on a new iPad, Mac, and more with Apple education pricing. It’s available to current and newly accepted college students and their parents, as well as faculty, staff, and homeschool teachers of all grade levels.
+                <span><sup style="text-underline-offset: -0.28em; "><a href="" style="color:white;">**</a></sup></span>
+            </div>
+             <div style="padding-top: 20px;font-size: 19px;">
+             <a href="" class="padding-top3">Shop now</a>
+            </div>
+            </div>
+            </div>
+            
+            <div id="scrollablediv" >
+            <div class="width4">
+                <div class="sticky4"><div class="closepopupdiv34"><button class="closepopup34"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+            </div>
+                <div class="grey4">
+                 <div class="top-text4"> Delivery and Pickup</div> 
+                 <div class="fontsize4">Flexible delivery and<br> pickup options.</div>
+                <div class="textpopup4">
+                    Get your new Apple products quickly and easily with a handful of delivery and pickup options to choose from.    
+                </div>
+                <div class="textpopup4" style="font-weight: 550;">Two-hour delivery from an Apple Store</div>
+                <div class="textpopup4">
+                    Enjoy lightning‑fast courier delivery for an additional fee at checkout, on eligible in‑stock items in most metro areas. Delivery time windows can be scheduled at checkout.    
+                </div>
+                <div class="textpopup4" style="font-weight: 550;">Convenient local pickup</div>
+                <div class="textpopup4">
+                    Place your order online and pick it up at a local Apple Store. Curbside pickup is also available at select locations — simply park your car and we’ll bring your order out to you.    
+                </div>
+                <div class="textpopup4" style="font-weight: 550;">Free next‑day delivery</div>
+                <div class="textpopup4">
+                    Most of your favorite Apple products are available for free next‑day delivery.    
+                </div>
+            
+                 <div style="padding-top: 20px;font-size: 19px;">
+                 <a href="" class="padding-top4">Learn more</a>
+                </div>
+                </div>
+            
+            </div>
+            </div>
+            <div class="width5">
+                <div class="sticky5"><div class="closepopupdiv35"><button class="closepopup35"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+            </div>
+                <div class="grey5">
+                 <div class="top-text5"> Engraving</div> 
+                 <div class="fontsize5"> Add a message that lasts.</div>
+                <div class="textpopup5">
+                    Choose from new engraving options.It’s the perfect way to personalize your iPad. Add a special message, name, or birthday. Even combine text and numbers with your favorite emoji.<span><sup style="padding: 0;"><a href="" style="color:white; font-size:10px;">12</a></sup></span>
+                </div>
+                 <div style="padding-top: 20px;">
+                 <a href="" class="padding-top5">Learn more</a>
+                </div>
+                </div>
+                </div>
+                <div class="width6">
+                    <div class="sticky6"><div class="closepopupdiv36"><button class="closepopup36"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+                </div>
+                    <div class="grey6">
+                     <div class="top-text6">Guided Video Shopping</div> 
+                     <div class="fontsize6">Shop live with a Specialist.</div>
+                    <div class="textpopup6">
+                        We can help you choose the product you need while guiding you through the online Apple Store. You won’t appear on camera. Available 7 a.m.–7 p.m. PT.
+                    </div>
+                    <div class="textpopup6">
+                        <a href="" class="padding-top6">Shop together with a Specialist</a>
+                    </div>
+                    <div class="textpopup6">
+                        Other ways to shop with a Specialist
+                    </div>
+                    <div class="textpopup6">
+                        <a href="" class="padding-top6">Chat with us online</a>
+                    </div>
+                    <div class="textpopup6">
+                        <a href="" class="padding-top6">Sign with us online (ASL)</a>
+                    </div>
+                    <div class="textpopup6">
+                        Supported by SignTime <br>
+                        Available 5 a.m.-9 p.m. PT
+                    </div>
+                    <div class="textpopup6">
+                        Call us at 1-800-MY-APPLE <br>
+                        Available 5 a.m.-9 p.m. PT
+                    </div>
+                     <div style="padding-top: 20px;">
+                     <a href="" class="padding-top6">Reserve an in‑store shopping session</a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="width7">
+                        <div class="sticky7"><div class="closepopupdiv37"><button class="closepopup37"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+                    </div>
+                        <div class="grey7">
+                         <div class="top-text7"> Online Personal Session</div> 
+                         <div class="fontsize7"> Get to know your new iPad.</div>
+                        <div class="textpopup7">
+                            Whether you’re new to your Apple device or need a refresher on the latest features, schedule a free one‑on‑one session with a Specialist to set up your iPad and get it ready to use. We can show you how to get more from the products you love — and even share our favorite tips.
+                        </div>
+                         <div style="padding-top: 20px;">
+                         <a href="" class="padding-top7">Learn more</a>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="scrollablediv2">
+                        <div class="width8">
+                            <div class="sticky8"><div class="closepopupdiv38"><button class="closepopup38"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
+                        </div>
+                            <div class="grey8">
+                                
+                             <div class="top-text8">Apple Store App</div> 
+                             
+                             <div class="fontsize8">Shop in the Apple Store<br>app, tailored specifically <br> for you.</div>
+                            <div class="textpopup8">
+                                Get personalized product recommendations, compare models, access Your Saves, and track your orders. Opt in today to get updates on new products, promotions, flexible payment options, and store events.  
+                            </div>
+                            
+                            <div class="textpopup8" style="font-weight: 550;">Scan the QR code to get started.</div>
+                            <div style="display: flex;justify-content:center; padding-top:56px;margin-top:20px; margin-bottom:30px;">
+                            <img src="resources/qrcode.png" alt="qrcode">
+                            
+                            </div>
+                             <div style="padding-top: 20px;font-size: 19px;">
+                             <a href="" class="padding-top8">Download the Apple Store app</a>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
 </body>
 
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -1179,6 +1506,7 @@
 
 <!-- <script src="vid.js"></script> -->
 <script src="script.js"></script>
+<script src="pt5.js"></script>
 <script src="pt1.js "></script>
 <script src="pt2.js "></script>
 <script src="pt3.js"></script>
