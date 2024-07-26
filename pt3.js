@@ -1,5 +1,8 @@
 var isplayedvid = false;
+
+
 function revealpt3_1() {
+  document.querySelector(".pt2new1placard_flx").style.paddingLeft=document.querySelector(".pt2_new1").getBoundingClientRect().left+"px"
   var vidplay_ = document.querySelector(".txt1vid_");
   var windowHeight = window.innerHeight;
   var revealtop = vidplay_.getBoundingClientRect().top;
@@ -27,27 +30,15 @@ window.addEventListener("scroll", revealpt3_1);
 
 var allelem = document.querySelector(".allshown");
 var popup2 = document.querySelector(".mainflxboxpopup2");
-var to_scroll = document.querySelector(".pt3");
-var scrollpos = 0;
-console.log("1");
 function showpopup2() {
-  scrollpos = to_scroll.getBoundingClientRect().top - 3000;
-  scrollpos = scrollpos - 2 * scrollpos;
-  console.log(scrollpos);
   function animpopup2() {
    
-    allelem.style.overflow = "hidden";
-    popup2.style.display = "flex";
-    allelem.style.display = "none";
-    document.body.style.backgroundColor = "rgb(27,27,27)";
-    document.body.style.display = "flex";
-    document.body.style.justifyContent = "center";
-    document.body.style.alignItems = "center";
-    window.scrollTo(0, 0);
+    document.body.style.overflowY="hidden"
+    document.querySelector("#scrollablediv4").style.visibility="visible"; 
     anime({
       targets: popup2,
       opacity: [0, 1],
-      translateY: ["+40%", "+5%"],
+      translateY: ["-40%", "0%"],
       easing: "easeInQuad",
       duration: 1000,
     });
@@ -57,36 +48,22 @@ function showpopup2() {
   setTimeout(animpopup2, 10);
 }
 function closepopup2() {
+  document.getElementById("scrollablediv4").scrollTop=0;
   anime({
     targets: popup2,
     opacity: [1, 0],
     easing: "easeOutQuad",
     duration: 500,
   });
-  setTimeout(()=>{
-  document.body.style.backgroundColor = "black";
-  allelem.style.overflow = "visible";
-  allelem.style.display = "block";
-  video4.style.position='absolute'
-  window.scrollTo(0, scrollpos);
-
-  },510)
+  
   setTimeout(()=>{allelem.classList.remove('blur1')
 
   },600)
   function animpopup2_2() {
     
-    popup2.style.display = "none";
-    
-    document.body.style.backgroundColor = "black";
-    document.body.style.display = "block";
-    document.body.style.justifyContent = "none";
-    document.body.style.alignItems = "none";
-    document.querySelector(".buttons_phone").style.position = "absolute";
-  document.querySelector(".buttons_pt2").style.position = "static";
-    document.querySelector(".buttons_pt2").style.visibility = "hidden";
-    document.querySelector("#pauseplay").style.position = "static";
-    document.querySelector("#pauseplay").style.visibility = "hidden";
+    document.querySelector("#scrollablediv4").style.visibility="hidden"; 
+    document.body.style.overflowY="visible"
+
     
   }
 
@@ -105,3 +82,42 @@ function revealpt3_2() {
   }
 }
 window.addEventListener("scroll", revealpt3_2);
+var popup5=document.querySelector(".maincontentbox")
+function showpopup5() {
+  
+  function animpopup5() {
+   
+    document.body.style.overflowY="hidden"
+    document.querySelector("#scrollablediv6").style.visibility="visible"; 
+    anime({
+      targets: popup5,
+      opacity: [0, 1],
+      translateY: ["-40%", "0%"],
+      easing: "easeInQuad",
+      duration: 1000,
+    });
+  }
+  allelem.classList.add('blur1')
+
+  setTimeout(animpopup5, 10);
+}
+function closepopup5() {
+  anime({
+    targets: popup5,
+    opacity: [1, 0],
+    easing: "easeOutQuad",
+    duration: 500,
+  });
+  
+  setTimeout(()=>{allelem.classList.remove('blur1')
+
+  },600)
+  function animpopup5_2() {
+    
+     document.querySelector("#scrollablediv6").style.visibility="hidden"; 
+  document.body.style.overflowY="visible"
+    
+  }
+
+  setTimeout(animpopup5_2, 1000);
+}

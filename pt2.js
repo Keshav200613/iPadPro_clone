@@ -1,8 +1,13 @@
 var checked=false
+var poprunning=false
+window.addEventListener("scroll",()=>{
+  if(document.querySelector(".price").getBoundingClientRect().top<50) document.querySelector(".nav2").classList.remove("hidden")
+    else document.querySelector(".nav2").classList.add("hidden")
+})
+
 function openvideo() {
   var main_doc = document.querySelector(".allshown");
-  main_doc.style.display = "none";
-  main_doc.style.overflow = "hidden";
+  document.body.style.overflowY="hidden"
   document.body.style.backgroundColor = "rgb(27, 27, 27)";
   var popup = document.querySelector(".container_popup_vid");
   popup.style.display = "block";
@@ -29,17 +34,8 @@ function openvideo() {
 }
 
 function close_popup_vid() {
-  var main_doc = document.querySelector(".allshown");
-  main_doc.style.display = "block";
-  main_doc.style.overflow = "visible";
+  document.body.style.overflowY="visible"
   document.body.style.backgroundColor = "black";
-
-  document.querySelector(".buttons_phone").style.position = "absolute";
-  document.querySelector(".buttons_pt2").style.position = "static";
-    document.querySelector(".buttons_pt2").style.visibility = "hidden";
-    document.querySelector("#pauseplay").style.position = "static";
-    document.querySelector("#pauseplay").style.visibility = "hidden";
-  checked=false
   var popup = document.querySelector(".container_popup_vid");
   popup.style.display = "none";
   var vid = document.querySelector(".container_vid_trailer");
@@ -66,9 +62,6 @@ let counter = 1;
 var run = false;
 var closing = false;
 function animeplacards() {
-  var hd1cpy = document.querySelector(".hd1");
-  var p1cpy = document.querySelector(".p1");
-  var p11cpy = document.querySelector(".p11");
   var placards = document.querySelector(".flx_placards");
   var windowHeight = window.innerHeight;
   var revealtop = placards.getBoundingClientRect().top;
@@ -79,7 +72,7 @@ function animeplacards() {
   }
 }
 
-var play;
+var play=true;
 
 document.querySelector(".play").addEventListener("click", () => {
   play = true;
@@ -123,7 +116,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-83vw",
+          left: "-1160px",
 
           complete: function (anim) {
             counter = 2;
@@ -183,7 +176,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-163vw",
+          left: "-2460px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 3;
@@ -242,7 +235,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-253vw",
+          left: "-3760px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 4;
@@ -300,7 +293,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-333vw",
+          left: "-5060px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 5;
@@ -359,7 +352,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -453,7 +446,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-163vw",
+          left: "-2460px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 3;
@@ -512,7 +505,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-253vw",
+          left: "-3760px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 4;
@@ -568,7 +561,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-333vw",
+          left: "-5060px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 5;
@@ -576,7 +569,6 @@ document.querySelector(".play").addEventListener("click", () => {
               a[4].style.background = "rgb(174, 163, 163)";
               a[4].style.width = "47px";
               a[4].style.borderRadius = "20px";
-
               a[0].style.width = "10px";
               a[0].style.borderRadius = "50%";
               a[2].style.width = "10px";
@@ -626,7 +618,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -716,7 +708,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-253vw",
+          left: "-3760px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 4;
@@ -774,7 +766,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-333vw",
+          left: "-5060px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 5;
@@ -832,7 +824,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -920,7 +912,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-333vw",
+          left: "-5060px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 5;
@@ -978,7 +970,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -1068,7 +1060,7 @@ document.querySelector(".play").addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -1254,7 +1246,7 @@ for (let i = 0; i < a.length; i++) {
       a[4].style.borderRadius = "50%";
       a[5].style.width = "10px";
       a[5].style.borderRadius = "50%";
-      placards.style.left = "0vw";
+      placards.style.left = document.querySelector(".pt2_new1").getBoundingClientRect().left+"px";
       anime({
         targets: [".hd1", ".p1", ".p11"],
         translateX: [100, 0],
@@ -1290,7 +1282,7 @@ for (let i = 0; i < a.length; i++) {
       a[4].style.borderRadius = "50%";
       a[5].style.width = "10px";
       a[5].style.borderRadius = "50%";
-      placards.style.left = "-83vw";
+      placards.style.left = "-1160px";
       anime(
         {
           targets: [".hd2", ".p2"],
@@ -1328,7 +1320,7 @@ for (let i = 0; i < a.length; i++) {
       a[4].style.borderRadius = "50%";
       a[5].style.width = "10px";
       a[5].style.borderRadius = "50%";
-      placards.style.left = "-163vw";
+      placards.style.left = "-2460px";
       anime(
         {
           targets: [".hd3", ".p3"],
@@ -1366,7 +1358,7 @@ for (let i = 0; i < a.length; i++) {
       a[4].style.borderRadius = "50%";
       a[5].style.width = "10px";
       a[5].style.borderRadius = "50%";
-      placards.style.left = "-253vw";
+      placards.style.left = "-3760px";
       anime(
         {
           targets: ".p4",
@@ -1404,7 +1396,7 @@ for (let i = 0; i < a.length; i++) {
       a[0].style.borderRadius = "50%";
       a[5].style.width = "10px";
       a[5].style.borderRadius = "50%";
-      placards.style.left = "-333vw";
+      placards.style.left = "-5060px";
       anime(
         {
           targets: [".hd5", ".p5"],
@@ -1442,7 +1434,7 @@ for (let i = 0; i < a.length; i++) {
       a[4].style.borderRadius = "50%";
       a[0].style.width = "10px";
       a[0].style.borderRadius = "50%";
-      placards.style.left = "-413vw";
+      placards.style.left = "-6360px";
       anime(
         {
           targets: [".hd6", ".p6"],
@@ -1508,7 +1500,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-83vw",
+              left: "-1160px",
 
               complete: function (anim) {
                 counter = 2;
@@ -1555,7 +1547,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-163vw",
+              left: "-2460px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 3;
@@ -1614,7 +1606,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-253vw",
+              left: "-3760px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 4;
@@ -1672,7 +1664,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-333vw",
+              left: "-5060px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 5;
@@ -1730,7 +1722,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-413vw",
+              left: "-6360px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 6;
@@ -1824,7 +1816,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-163vw",
+              left: "-2460px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 3;
@@ -1883,7 +1875,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-253vw",
+              left: "-3760px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 4;
@@ -1941,7 +1933,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-333vw",
+              left: "-5060px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 5;
@@ -1999,7 +1991,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-413vw",
+              left: "-6360px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 6;
@@ -2091,7 +2083,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-253vw",
+              left: "-3760px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 4;
@@ -2149,7 +2141,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-333vw",
+              left: "-5060px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 5;
@@ -2207,7 +2199,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-413vw",
+              left: "-6360px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 6;
@@ -2298,7 +2290,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-333vw",
+              left: "-5060px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 5;
@@ -2356,7 +2348,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-413vw",
+              left: "-6360px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 6;
@@ -2446,7 +2438,7 @@ for (let i = 0; i < a.length; i++) {
           .add(
             {
               targets: placards,
-              left: "-413vw",
+              left: "-6360px",
               easing: "easeInQuad",
               complete: function (anim) {
                 counter = 6;
@@ -2595,7 +2587,7 @@ animation
   .add(
     {
       targets: placards,
-      left: "-83vw",
+      left: "-1160px",
 
       complete: function (anim) {
         counter = 2;
@@ -2654,7 +2646,7 @@ animation
   .add(
     {
       targets: placards,
-      left: ["-83vw", "-163vw"],
+      left: ["-1160px", "-2460px"],
       easing: "easeInQuad",
       complete: function (anim) {
         counter = 3;
@@ -2713,7 +2705,7 @@ animation
   .add(
     {
       targets: placards,
-      left: ["-163vw", "-253vw"],
+      left: ["-2460px", "-3760px"],
       easing: "easeInQuad",
       complete: function (anim) {
         counter = 4;
@@ -2771,7 +2763,7 @@ animation
   .add(
     {
       targets: placards,
-      left: ["-253vw", "-333vw"],
+      left: ["-3760px", "-5060px"],
       easing: "easeInQuad",
       complete: function (anim) {
         counter = 5;
@@ -2829,7 +2821,7 @@ animation
   .add(
     {
       targets: placards,
-      left: ["-333vw", "-413vw"],
+      left: ["-5060px", "-6360px"],
       easing: "easeInQuad",
       complete: function (anim) {
         counter = 6;
@@ -2909,7 +2901,7 @@ pauseplaybutton.addEventListener("click", () => {
     playbutton.style.maxHeight = "35px";
     playbutton.style.opacity='1'
     playbutton.style.maxWidth = "35px";
-    placards.style.left = "0vw";
+    placards.style.left = document.querySelector(".pt2_new1").getBoundingClientRect().left+"px";
     a[0].style.width = "47px";
     a[0].style.borderRadius = "20px";
     a[5].style.width = "10px";
@@ -2958,7 +2950,7 @@ pauseplaybutton.addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-83vw",
+          left: "-1160px",
 
           complete: function (anim) {
             counter = 2;
@@ -3018,7 +3010,7 @@ pauseplaybutton.addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-163vw",
+          left: "-2460px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 3;
@@ -3077,7 +3069,7 @@ pauseplaybutton.addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-253vw",
+          left: "-3760px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 4;
@@ -3135,7 +3127,7 @@ pauseplaybutton.addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-333vw",
+          left: "-5060px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 5;
@@ -3194,7 +3186,7 @@ pauseplaybutton.addEventListener("click", () => {
       .add(
         {
           targets: placards,
-          left: "-413vw",
+          left: "-6360px",
           easing: "easeInQuad",
           complete: function (anim) {
             counter = 6;
@@ -3251,7 +3243,6 @@ pauseplaybutton.addEventListener("click", () => {
               document.querySelector(".restartbutton").style.maxWidth = "35px";
               playbutton.style.overflow = "hidden";
               playbutton.style.maxHeight = "0px";
-
               playbutton.style.maxWidth = "0px";
             }
           }
@@ -3311,188 +3302,232 @@ pauseplaybutton.addEventListener("click", () => {
   }
 });
 
+var animationrunning0=true
+function revealanimation() {
 
-async function revealanimation() {
-  var hd1cpy = document.querySelector(".hd1");
-  var p1cpy = document.querySelector(".p1");
-  var p11cpy = document.querySelector(".p11");
   var placards = document.querySelector(".flx_placards");
 
   var windowHeight = window.innerHeight;
   var revealtop = placards.getBoundingClientRect().top;
+  var bottom1 = document.querySelector(".allbuttons").getBoundingClientRect().top;
+  var popup1=document.querySelector(".buttons_pt2").getBoundingClientRect().top;
+  var revealpoint = 450;
+  
 
-  var revealpoint = window.innerHeight / 1.35;
-
-  if ((revealpoint > windowHeight - revealtop || revealtop < -560) && run) {
-    pauseplaybutton.style.visibility = "hidden";
-    a[0].style.visibility = "hidden";
-    a[1].style.visibility = "hidden";
-    a[2].style.visibility = "hidden";
-    a[3].style.visibility = "hidden";
-    a[4].style.visibility = "hidden";
-    a[5].style.visibility = "hidden";
-
-    run = false;
-    document.querySelector(".buttons_pt2").classList.add("active_button3");
-
-    setTimeout(async () => {
-      document.querySelector(".buttons_pt2").style.visibility = "hidden";
-
-      document.querySelector("#buttons_pt2").classList.remove("active_button3");
-    }, 500);
-  } else {
-    if (revealpoint < windowHeight - revealtop && revealtop > -554 && !run) {
-       if (!closing) {
-        press = false;
-        play = true;
-        closing = true;
-        playbutton.style.overflow = "visible";
-        playbutton.style.maxHeight = "35px";
-        playbutton.style.maxWidth = "35px";
-        pausebutton.style.overflow = "hidden";
-        pausebutton.style.maxHeight = "0px";
-        pausebutton.style.maxWidth = "0px";
-        document.querySelector(".restartbutton").style.overflow = "hidden";
-        document.querySelector(".restartbutton").style.maxHeight = "0px";
-        document.querySelector(".restartbutton").style.maxWidth = "0px";
-        animation.play();
-      }
-      await setTimeout(() => {
-        document.querySelector(".buttons_pt2").style.visibility = "visible";
-        document.querySelector("#buttons_pt2").classList.add("active_button2");
-      }, 0);
-
-      await setTimeout(async () => {
-        document
-          .querySelector("#buttons_pt2")
-          .classList.remove("active_button2");
-      }, 1000);
-
-      await setTimeout(() => {
-        pauseplaybutton.style.visibility = "visible";
-        document.querySelector(".buttons_pt2").style.visibility = "visible";
-
-        a[0].style.visibility = "visible";
-        a[1].style.visibility = "visible";
-        a[2].style.visibility = "visible";
-        a[3].style.visibility = "visible";
-        a[4].style.visibility = "visible";
-        a[5].style.visibility = "visible";
-      }, 1200);
-
-      run = true;
-    } else {
-      var windowHeight = window.innerHeight;
-      var revealtop = placards.getBoundingClientRect().top;
-
-      var revealpoint = window.innerHeight / 1.1;
-      if (revealpoint * 1.45 > windowHeight - revealtop) {
-        pauseplaybutton.style.position = "fixed";
-        document.querySelector(".buttons_pt2").style.position = "fixed";
-      }
-      if (revealpoint * 1.45 < windowHeight - revealtop) {
-        if (closing) {
-          closing = false;
-          play = false;
-          press = true;
-          pausebutton.style.overflow = "visible";
-          pausebutton.style.maxHeight = "35px";
-          pausebutton.style.maxWidth = "35px";
-          playbutton.style.overflow = "hidden";
-          playbutton.style.maxHeight = "0px";
-          playbutton.style.maxWidth = "0px";
-          document.querySelector(".restartbutton").style.overflow = "hidden";
-          document.querySelector(".restartbutton").style.maxHeight = "0px";
-          document.querySelector(".restartbutton").style.maxWidth = "0px";
-          if (pausetime == true) {
-            animation.pause();
-          } else {
-            setTimeout(() => {
-              animation.pause();
-            }, 600);
-          }
-        }
-        document.querySelector(".buttons_pt2").style.position = "static";
-        document.querySelector("#pauseplay").style.position = "static";
-      }
-    }
+  if(revealtop-popup1>0) {document.querySelector(".buttons_pt2").style.opacity=0
+    document.getElementById("pauseplay").classList.add("hidden")
   }
-  if (revealtop > 250 || -730 < revealtop < -554) {
-    document.querySelector(".buttons_pt2").style.position = "static";
-    document.querySelector(".buttons_pt2").style.visibility = "hidden";
-    document.querySelector("#pauseplay").style.position = "static";
-    document.querySelector("#pauseplay").style.visibility = "hidden";
-    a[0].style.visibility = "hidden";
-    a[1].style.visibility = "hidden";
-    a[2].style.visibility = "hidden";
-    a[3].style.visibility = "hidden";
-    a[4].style.visibility = "hidden";
-    a[5].style.visibility = "hidden";
+  if(bottom1-popup1<=0){ document.querySelector(".fixeddiv").style.position="static"
   }
+  if(popup1>windowHeight-20) document.querySelector(".fixeddiv").style.position="fixed"
+  if ((revealtop > windowHeight - revealpoint || bottom1 < 0) && !animationrunning0 && run) {
+    animationrunning0 = true;
+    
+    anime0=false
+
+    // animation.pause()
+    var closinganime0=gsap.timeline({
+      autoplay:true,
+      autoAlpha:1,
+    })
+    closinganime0.to(".playbutton",{opacity:0},"<")
+    closinganime0.to(".pausebutton",{opacity:0},"<")
+    closinganime0.to(".restartbutton",{opacity:0},"<")
+    closinganime0.to(".buttons_pt2",{width:"56px",duration:0.5,onStart:()=>{
+      document.querySelector(".checkbuttons").classList.add("hidden")
+    }},"-=0.1")
+    closinganime0.to("#pauseplay",{x:20,duration:0.5,
+    },"<")
+    
+    closinganime0.to(".buttons_pt2",{opacity:0,duration:0.3,
+      onComplete:()=>{ anime0=true
+        document.getElementById("pauseplay").classList.add("hidden")
+        run=false
+      }
+    })
+    // closinganime0.timeScale(3)
+    poprunning=true
+    // run = false;
+  
+  }
+    
+
+   else if (revealtop < windowHeight - revealpoint && !run) {
+      // anime1=true
+      if(play) animation.play()
+      // animation.play()
+        var tl=gsap.timeline(({
+            autoplay:true,
+            autoAlpha:1
+        }))
+        tl.fromTo(".buttons_pt2",{opacity:0,width:"56px",outline:"0px solid rgb(0, 113, 227)"} ,{
+           opacity:1,outline:"20px solid rgb(0, 113, 227)", duration: 0.5,easing:"power1.out"
+           
+        });
+        tl.to(".buttons_pt2",{
+            outline:"0 solid rgb(0, 113, 227)",duration:0.3,easing:"power1.in",onComplete:()=>{
+                document.querySelector(".buttons_pt2").classList.remove("hidden")
+                document.getElementById("pauseplay").classList.remove("hidden")                  
+            }
+            
+        });
+        tl.to("#pauseplay",{
+          x:250,duration:0.7,easing:"power1.in"
+        })
+        tl.to(".playbutton",{opacity:1},"<")
+    tl.to(".pausebutton",{opacity:1},"<")
+    tl.to(".restartbutton",{opacity:1},"<")
+        tl.to(".buttons_pt2",{
+            width:"216px",duration:0.7,easing:"power1.in",onComplete:()=>{
+              // document.querySelector(".playpausecheck").classList.remove("hidden")
+                   document.querySelector(".checkbuttons").classList.remove("hidden")
+                   
+                   animationrunning0=false
+                   anime0=false
+            }
+        
+        },"<")
+        tl.timeScale(1.5)
+    run=true
+     
+     } 
+
+    
 }
 
 window.addEventListener("scroll", revealanimation);
-
-var close = false;
+var animationrunning1=true
+var revealedpop1 = false;
 function revealbuttons() {
+  var anime1=false
   var pt2placard = document.querySelector(".pt2new1placard_flx");
   var windowHeight = window.innerHeight;
   var revealtop = pt2placard.getBoundingClientRect().top;
-
-  var revealpoint = window.innerHeight / 1.35;
-
-  if ((revealpoint > windowHeight - revealtop || revealtop < -570) && close) {
-    close = false;
-    document.querySelector(".buttons_phone").classList.add("active_button3");
-    document.querySelector(".black").style.visibility = "hidden";
-    document.querySelector(".white").style.visibility = "hidden";
-    setTimeout(async () => {
-      document.querySelector(".buttons_phone").style.visibility = "hidden";
-      document.querySelector(".black").style.visibility = "hidden";
-      document.querySelector(".white").style.visibility = "hidden";
-
-      document
-        .querySelector(".buttons_phone")
-        .classList.remove("active_button3");
-    }, 500);
-  } else {
-    if (revealpoint < windowHeight - revealtop && revealtop > -549 && !close) {
-      close = true;
-      document.querySelector(".buttons_phone").style.visibility = "visible";
-      document.querySelector(".buttons_phone").classList.add("active_button4");
-      document.querySelector(".black").style.visibility = "hidden";
-      document.querySelector(".white").style.visibility = "hidden";
-
-      setTimeout(() => {
-        document
-          .querySelector(".buttons_phone")
-          .classList.remove("active_button4");
-        document.querySelector(".black").style.visibility = "visible";
-        document.querySelector(".white").style.visibility = "visible";
-      }, 1000);
-      setTimeout(() => {
-        document.querySelector(".buttons_phone").style.visibility = "visible";
-        document.querySelector(".black").style.visibility = "visible";
-        document.querySelector(".white").style.visibility = "visible";
-      }, 1200);
-    } else {
-      var windowHeight = window.innerHeight;
-      var revealtop = pt2placard.getBoundingClientRect().top;
-      var revealpoint = window.innerHeight / 1.1;
-      if (revealpoint * 1.45 > windowHeight - revealtop) {
-        document.querySelector(".buttons_phone").style.position = "fixed";
+  var bottom = document.querySelector(".button_newflex").getBoundingClientRect().bottom;
+  var popup=document.querySelector(".buttons_phone").getBoundingClientRect().bottom;
+  var revealpoint = 600;
+  if(revealtop-popup>0) document.querySelector(".buttons_phone").style.opacity=0
+  if(bottom-popup<=0) document.querySelector(".buttons_phone").style.position="static"
+  if(bottom>windowHeight-20) document.querySelector(".buttons_phone").style.position="fixed"
+  if(revealtop<windowHeight-revealpoint && !revealedpop1 && !anime1)
+    {anime1=true
+      
+        var tl=gsap.timeline(({
+            autoplay:true,
+            autoAlpha:1
+        }))
+        tl.fromTo(".buttons_phone",{opacity:0,width:"56px",outline:"0px solid rgb(0, 113, 227)"} ,{
+           opacity:1,outline:"20px solid rgb(0, 113, 227)", duration: 0.5,easing:"power1.out"
+           
+        });
+        tl.to(".buttons_phone",{
+            outline:"0 solid rgb(0, 113, 227)",duration:0.3,easing:"power1.in",onComplete:()=>{
+                document.querySelector(".buttons_phone").classList.remove("hidden")
+            }
+            
+        });
+        
+        tl.to(".buttons_phone",{
+            width:"98px",duration:0.7,easing:"power1.in",onComplete:()=>{
+              
+                    document.getElementById("black1").classList.remove("hidden")
+                   document.getElementById("white1").classList.remove("hidden")                  
+                   animationrunning1=false
+                   anime1=false
+            }
+        
+        })
+        tl.timeScale(1.5)
+    revealedpop1=true
+}
+  else if ((revealtop > windowHeight - revealpoint || bottom < 50) && !animationrunning1 && !anime1) {
+    animationrunning1 = true;
+    anime1=false
+    
+    var closinganime1=gsap.timeline({
+      autoAlpha:1,
+    })
+    closinganime1.to(".buttons_phone",{width:"56px",duration:0.5,onStart:()=>{
+      document.getElementById("white1").classList.add("hidden")
+      document.getElementById("black1").classList.add("hidden")
+    }})
+    closinganime1.to(".buttons_phone",{opacity:0,duration:0.3,
+      onComplete:()=>{ anime1=true
+        revealedpop1=false
       }
-      if (revealpoint * 1.45 < windowHeight - revealtop) {
-        document.querySelector(".buttons_phone").style.position = "absolute";
-      }
-    }
+    })
+    closinganime1.timeScale(3)
   }
-  if (revealtop > 200 || -730 < revealtop < -570) {
-    document.querySelector(".buttons_phone").style.position = "static";
-    document.querySelector(".buttons_phone").style.visibility = "hidden";
-    document.querySelector(".black").style.visibility = "hidden";
-    document.querySelector(".white").style.visibility = "hidden";
+  else{
+      if(revealtop < windowHeight - revealpoint && anime1) revealedpop1=false
   }
+  
 }
 
 window.addEventListener("scroll", revealbuttons);
+var allelem = document.querySelector(".allshown");
+var popup3 = document.querySelector(".mainflxboxpopup3");
+
+function showpopup3() { 
+  function animpopup3() {
+    anime({
+      targets: popup3,
+      opacity: [0, 1],
+      translateY: ["-40%", "0%"],
+      easing: "easeInQuad",
+      duration: 1000,
+    });
+    document.body.style.overflowY="hidden"   
+    document.querySelector("#scrollablediv3").style.visibility="visible";  
+    
+
+  }
+  allelem.classList.add("blur1")
+  setTimeout(animpopup3, 10);
+}
+function closepopup3() {
+  document.getElementById("scrollablediv3").scrollTop=0;
+  anime({
+    targets: popup3,
+
+    opacity: [1, 0],
+    easing: "easeOutQuad",
+    duration: 500,
+  });
+  
+  setTimeout(()=>{allelem.classList.remove('blur1')
+  },600)
+
+  function animpopup3_2() {
+    document.body.style.overflowY="visible"
+    document.querySelector("#scrollablediv3").style.visibility="hidden";
+  }
+
+  setTimeout(animpopup3_2, 1000);
+}
+
+var isplayedvid_pop3 = false;
+function revealpt3_popup3_1() {
+  var vidplay__ = document.querySelector(".popup3pt2vid");
+  var windowHeight = window.innerHeight;
+  var revealtop = vidplay__.getBoundingClientRect().top;
+  var revealpoint = 250;
+  if (revealtop < windowHeight - revealpoint && isplayedvid_pop3 == false) {
+    vidplay__.play();
+    isplayedvid_pop3 = true;
+  }
+}
+window.addEventListener("scroll", revealpt3_popup3_1);
+
+var isplayedvid_pop3_2 = false;
+function revealpt3_popup3_2() {
+  var vidplay___ = document.querySelector(".popup3pt4vid");
+  var windowHeight = window.innerHeight;
+  var revealtop = vidplay___.getBoundingClientRect().top;
+  var revealpoint = 250;
+  if (revealtop < windowHeight - revealpoint && isplayedvid_pop3_2 == false) {
+    vidplay___.play();
+    isplayedvid_pop3_2 = true;
+  }
+}
+window.addEventListener("scroll", revealpt3_popup3_2);

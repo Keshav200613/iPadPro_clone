@@ -4,26 +4,31 @@ document.querySelector("#popupbutton1").addEventListener("click",()=>{
    document.body.style.overflowY="hidden"
    document.querySelector(".width1").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky1").addEventListener("click",()=>{
     document.querySelector(".width1").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     if(posn2==1) leftclick2()
 
 })
+
 document.querySelector("#popupbutton2").addEventListener("click",()=>{
     document.querySelector(".width2").style.visibility="visible";
    document.body.style.overflowY="hidden"
    document.querySelector(".width2").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky2").addEventListener("click",()=>{
     document.querySelector(".width2").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     if(posn2==2) leftclick2()
     if(posn2==0) rightclick2()
 })
@@ -32,12 +37,14 @@ document.querySelector("#popupbutton3").addEventListener("click",()=>{
    document.body.style.overflowY="hidden"
    document.querySelector(".width3").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky3").addEventListener("click",()=>{
     document.querySelector(".width3").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     if(posn2==3) leftclick2()
     else{
       posn2set=-790+"px"
@@ -65,11 +72,14 @@ document.querySelector("#popupbutton4").addEventListener("click",()=>{
    document.querySelector(".width4").style.opacity="1";
    document.querySelector("#scrollablediv").style.visibility="visible";  
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky4").addEventListener("click",()=>{
     document.body.style.overflowY="visible"
+    document.getElementById("scrollablediv").scrollTop=0
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     document.querySelector("#scrollablediv").style.visibility="hidden";
     if(posn2==4) leftclick2()
     else{
@@ -97,12 +107,14 @@ document.querySelector("#popupbutton5").addEventListener("click",()=>{
    document.body.style.overflowY="hidden"
    document.querySelector(".width5").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky5").addEventListener("click",()=>{
     document.querySelector(".width5").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     if(posn2==5) leftclick2()
     else{
       posn2set=-1580+"px";
@@ -129,12 +141,14 @@ document.querySelector("#popupbutton6").addEventListener("click",()=>{
    document.body.style.overflowY="hidden"
    document.querySelector(".width6").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky6").addEventListener("click",()=>{
     document.querySelector(".width6").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     posn2set=-1870+"px";
       posn2=5;
       anime({
@@ -166,12 +180,14 @@ document.querySelector("#popupbutton7").addEventListener("click",()=>{
    document.body.style.overflowY="hidden"
    document.querySelector(".width7").style.opacity="1";
    document.querySelector(".allshown").style.opacity="0.6"
+   document.querySelector(".nav2").style.opacity="0.6"
    
 })
 document.querySelector(".sticky7").addEventListener("click",()=>{
     document.querySelector(".width7").style.visibility="hidden";
     document.body.style.overflowY="visible"
     document.querySelector(".allshown").style.opacity="1"
+    document.querySelector(".nav2").style.opacity="1"
     posn2set=-1870+"px";
       posn2=5;
       anime({
@@ -203,11 +219,14 @@ document.querySelector("#popupbutton8").addEventListener("click",()=>{
     document.querySelector(".width8").style.opacity="1";
     document.querySelector("#scrollablediv2").style.visibility="visible";  
     document.querySelector(".allshown").style.opacity="0.6"
+    document.querySelector(".nav2").style.opacity="0.6"
     
  })
  document.querySelector(".sticky8").addEventListener("click",()=>{
      document.body.style.overflowY="visible"
+    document.getElementById("scrollablediv2").scrollTop=0
      document.querySelector(".allshown").style.opacity="1"
+     document.querySelector(".nav2").style.opacity="1"
      document.querySelector("#scrollablediv2").style.visibility="hidden";
      posn2set=-1870+"px";
       posn2=5;

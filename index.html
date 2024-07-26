@@ -14,7 +14,9 @@
             margin: 0px;
             padding: 0px;
         }
-
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             overflow-x: hidden;
             background-color: black;
@@ -25,16 +27,16 @@
 
         .flex_btns_leftright {
             gap: 15px;
-            transform: translateY(2950px);
+            transform: translateY(750px);
             display: flex;
             justify-content: right;
             align-items: right;
-            padding-right: 9vw;
+            padding-right: 144px;
         }
 
         .flex_btns_left {
-            height: 4.8vh;
-            width: 4.8vh;
+            height: 36px;
+            width: 36px;
             border: transparent;
             border-radius: 100%;
             font-size: 23px;
@@ -43,8 +45,8 @@
         }
 
         .flex_btns_right {
-            height: 4.8vh;
-            width: 4.8vh;
+            height: 36px;
+            width: 36px;
             border: transparent;
             font-size: 23px;
             border-radius: 100%;
@@ -52,28 +54,16 @@
             cursor: pointer;
         }
         .buttons_pt2{
-            width:48px;
-            height:48px;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
-            background-color: rgb(50,50,50);
-            border: 0.1px solid rgb(50,50,50);
-            transition: width 0.4s ease-in-out;
-            left: 640px;
-            bottom: 40px;
-
-             width: 210px;
-             height: 50px;
-              padding-left: 10px;
-            padding-right: 10px;
+            background-color: rgb(50,50,50,0.48);
+            width: 216px;
+            height: 56px;
+            opacity:0;
              margin: 20px;
              border-radius: 30px;
-             visibility: hidden;
-
-            position: fixed;
-
-             backdrop-filter:blur(40px) ;
+             backdrop-filter:blur(20px) ;
 
          }
 
@@ -97,13 +87,6 @@
          input[type="radio"]{
              display: none;
          }
-            /*.buttons_pt2:hover{
-                background-color: white;
-            }*/
-
-      /*  .bt_clr{
-            display: none;
-        }*/
         .allshown{
             position: relative;
             transition: -webkit-filter 2s;
@@ -122,7 +105,7 @@
         }
         
     </style>
-
+    <link rel="stylesheet" href="popups.css">
     <link rel="stylesheet " href="pt2.css ">
     <link rel="stylesheet " href="pt1.css ">
     <link rel="stylesheet" href="pt3.css">
@@ -458,7 +441,7 @@
             </div>
             <div class="placardscnt_pt2">
             <div class="flx_placards">
-                <div class="placard slides">
+                <div class="placard slide1">
                     <div class="hd1 ">All-new pro design. Incredibly portable. The thinnest </div>
                     <div class="p1 ">Apple product ever.</div>
                     <div class="sideimgflx ">
@@ -467,12 +450,12 @@
                     </div>
                     <div class="p11 ">13-inch model</div>
                 </div>
-                <div class="placard slides">
+                <div class="placard slide2">
                     <div class="hd2 ">Ultra Retina XDR. The world's most advanced display. </div>
                     <div class="p2 ">Extreme brightness and precise contrast.</div>
                     <div class="pt2img2 "><img class="pt2img2i " src="resources/pt2img2.jpeg "></img></div>
                 </div>
-                <div  class="placard3 slides">
+                <div  class="placard3 slide3">
                     <div class="flx_cnt_3 ">
                     <div class="hd3 ">Introducing the Apple M4 chip.</div>
                     <div class="p3 ">Outrageous performance, game-</div>
@@ -481,7 +464,7 @@
                     </div>
 
                 </div>
-                <div class="placard slides">
+                <div class="placard slide4">
                     <div class="flx_placards_4 ">
                         <div class="p4 ">
                             <div>Crush pro workflows</div>
@@ -491,11 +474,11 @@
                         <img class="img_4 " src="resources/pt2img4.png "></img>
                     </div>
                 </div>
-                <div class="placard5 slides">
+                <div class="placard5 slide5">
                     <div class="hd5 ">All-new Apple Pencil Pro.</div>
                     <div class="p5 ">New features for next-level creativity.</div>
                 </div>
-                <div class="placard6 slides">
+                <div class="placard6 slide6">
                     <div class="hd6 ">Redesigned, thinner Magic Keyboard.</div>
                     <div class="p6 ">Comfortable typing and haptic trackpad experience.</div>
                 </div>
@@ -503,21 +486,22 @@
                 <div class="filler "></div>
 
             </div>
+           
             </div>
 
-            <div class="pt2_new1 ">Take a closer look.</div>
+            <div class="pt2_new1">Take a closer look.</div>
             <div class="placardscnt_pt2new1">
-            <div class="pt2new1placard_flx ">
-                <div class="placardsmall_new1 ">
+            <div class="pt2new1placard_flx">
+                <div class="placardsmall_new1">
                     <img class="new1_1 " src="resources/pt2new1img1_black.jpeg "></img>
                     <img class="new1_1_white " src="resources/pt2new1img1_white.jpeg "></img>
                 </div>
-                <div class="placardsmall_new1 ">
-                    <img class="black_imgs " src="resources/pt2new1img2_black.jpeg "></img>
-                    <img class="new1_2_white " src="resources/pt2new1img2_white.jpeg "></img>
+                <div class="placardsmall_new1">
+                    <img class="black_imgs" src="resources/pt2new1img2_black.jpeg "></img>
+                    <img class="new1_2_white" src="resources/pt2new1img2_white.jpeg "></img>
                 </div>
                 <div class="placardlarge_new1 ">
-                    <img class="new1_3 " src="resources/pt2new1img3_black.jpeg "></img>
+                    <img class="new1_3" src="resources/pt2new1img3_black.jpeg "></img>
                     <img class="new1_3_white " src="resources/pt2new1img3_white.jpeg "></img>
                 </div>
                 <div class="placardmedium_new1 ">
@@ -538,50 +522,52 @@
             </div>
             </div>
         </section>
+        <div class="flex_btns_leftright">
+            <button class="flex_btns_left "><i class="fa-solid fa-angle-left " style="color: #ffffff; "></i></button>
+            <button class="flex_btns_right "><i class="fa-solid fa-angle-right " style="color: #ffffff; "></i></button>
+        </div>
+       
     </div>
-            <div class="flex_btns_leftright">
-                <button class="flex_btns_left "><i class="fa-solid fa-angle-left " style="color: #ffffff; "></i></button>
-                <button class="flex_btns_right "><i class="fa-solid fa-angle-right " style="color: #ffffff; "></i></button>
-            </div>
-            <div class="button_newflex">
-
-                <div class="buttons_phone">
-                    <button class="black black2" id="black1"></button>
-                <button class="white" id="white1"></button>
-            </div>
-        </div>
-            <!-- <div class="bt_clr "><button type="button " onclick="colorchange_new1 " class="color_blacktowhite ">click me!</button></div> -->
-
-        <div class="allbuttons">
-
-        <div class="buttons_pt2" id="buttons_pt2">
-
-            <label for="one" class="active_button button1_pt2 active"><div class="loading1"></div></label>
-
-            <label for="two" class="active_button button2_pt2 "><div class="loading2"></div></label>
-            <label for="three" class="active_button button3_pt2 "><div class="loading3"></div></label>
-            <label for="four" class=" active_button button4_pt2"><div class="loading4"></div></label>
-            <label for="five" class=" active_button button5_pt2"><div class="loading5"></div></label>
-            <label for="six" class="active_button button6_pt2"><div class="loading6"></div></label>
-            <input type="radio" id="play" class="play"></input>
-            <input type="radio" id="pause" class="pause"></input>
-            <!-- <input type="radio" id="restart" class="restart"></input> -->
-        </div>
-        <div id="pauseplay">
-
-            <label for="pause" class="playbutton" >
-                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M555-200v-560h175v560H555Zm-325 0v-560h175v560H230Z"/></svg>
-            </label>
-            <label for="play" class="pausebutton">
-                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M320-203v-560l440 280-440 280Z"/></svg>
-            </label>
-            <label for="restart" class="restartbutton">
-                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M480-160q-133 0-226.5-93.5T160-480q0-133 93.5-226.5T480-800q85 0 149 34.5T740-671v-129h60v254H546v-60h168q-38-60-97-97t-137-37q-109 0-184.5 75.5T220-480q0 109 75.5 184.5T480-220q83 0 152-47.5T728-393h62q-29 105-115 169t-195 64Z"/></svg>
-            </label>
-        </div>
-
+           
+    <div class="button_newflex" >
+        <div class="flexdiv" >
+        <div class="buttons_phone" >
+            <button class="black black2 hidden" id="black1"></button>
+            <button class="white hidden" id="white1"></button>
     </div>
+</div></div>
+<div class="allbuttons">
+<div class="flexdiv">
+<div class="fixeddiv" style="flex-direction: column;">
+    <div class="buttons_pt2" id="buttons_pt2" >
+        <div class="checkbuttons hidden">
+        <label for="one" class="active_button button1_pt2 active"><div class="loading1"></div></label>
+        <label for="two" class="active_button button2_pt2 "><div class="loading2"></div></label>
+        <label for="three" class="active_button button3_pt2 "><div class="loading3"></div></label>
+        <label for="four" class=" active_button button4_pt2"><div class="loading4"></div></label>
+        <label for="five" class=" active_button button5_pt2"><div class="loading5"></div></label>
+        <label for="six" class="active_button button6_pt2"><div class="loading6"></div></label>
+        <input type="radio" id="play" class="play"></input>
+        <input type="radio" id="pause" class="pause"></input>
+    </div>
+    </div>
+    <div id="pauseplay" class="hidden">
+        <!-- <div class="playpausecheck hidden"> -->
+        <label for="pause" class="playbutton" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="M555-200v-560h175v560H555Zm-325 0v-560h175v560H230Z"/></svg>
+        </label>
+        <label for="play" class="pausebutton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="M320-203v-560l440 280-440 280Z"/></svg>
+        </label>
+        <label for="restart" class="restartbutton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M480-160q-133 0-226.5-93.5T160-480q0-133 93.5-226.5T480-800q85 0 149 34.5T740-671v-129h60v254H546v-60h168q-38-60-97-97t-137-37q-109 0-184.5 75.5T220-480q0 109 75.5 184.5T480-220q83 0 152-47.5T728-393h62q-29 105-115 169t-195 64Z"/></svg>
+        </label>
+    <!-- </div> -->
+</div></div>
+</div></div>
+
      <section class="pt3">
+        <div>
         <div class="pt3hd1__">Explore the full story.</div>
         <div class="pt3flxtxt1">
             <div class="pt3txt1hd">Thrill. Sleeker.</div>
@@ -597,8 +583,18 @@
          <div class="txtdiv"><video class="txt1vid_" src="resources/pt3_1.webm" muted ></video></div>
         <div class="szofff">5.1 mm</div>
         <div class="desc_vid">thin and light design</div>
-        </div>
-        <div class="popup2showflx"><button class="popup2show" type="button" onClick="showpopup2()"><i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i></button></div>
+        
+
+        
+</div>
+<div class="popup2showflx2">
+            
+    <div class="popup2showflx">
+        <div id="hidtxt2" class="hidden" style="justify-self:center;margin-right:27px;">Dive into materials and design</div>
+        
+         <button class="popup2show hidden" type="button" onClick="showpopup2()"><i id="itag2" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+        </div></div>
+<div><div>
         <div class="pt3hd2__">
             <div>The world’s most</div>
             <div>advanced display.</div>
@@ -615,7 +611,8 @@
             </div>
             <div>color-accurate workflows.</div>
         </div>
-        <div class="pt3p2flx">
+        <div>
+            <div class="pt3p2flx">
             <div class="pt3pt2flxcnt">
                 <div class="pt3pt2flxcnt1">
                     <div class="pt3pt2flxhd1">1000 nits</div>
@@ -642,21 +639,25 @@
                 <div class="pt3pt2flxcnt1">
                     <div class="pt3pt2flxhd3">P3</div>
                     <div class="pt3pt2flxp">wide color</div>
-                </div>
-            </div>
-        </div>
+                </div></div>
+            
+        </div></div></div>
+        <div class="popup3showflx2">
+            <div class="popup3showflx">
+                <div id="hidtxt3" class="hidden" style="justify-self:center;margin-right:27px;">Immerse yourself in Ultra Retina XDR</div>
+                <button class="popup3show hidden" onclick="showpopup3()"><i id="itag3" class="fa-solid fa-plus hidden" style="color: #ffffff;font-size:21px;"></i></button></div></div>
+            
+    </div>
     <section>
         <div class="container">
             <video id="video4" autoplay muted loop src="resources/video.mp4"></video>
             <div id="zoom-out">
 
-                <h1 class="text">
-
-                    <i class="fa-brands fa-apple" style="font-size: 500px;position:absolute;left:-230px"></i><div class="apple">M4</div>
+                <h1 class="text" >
+                    <i class="fa-brands fa-apple" style="font-size: 520px;"></i>&nbsp;<div class="apple">M4</div>
                 </h1>
             </div>
             <div class="textcont">
-
                 <div class="playbuttonvid2" >
                     <i class="fa-sharp fa-solid fa-pause"></i>
                 </div>
@@ -665,6 +666,7 @@
                 </div>
 
             </div>
+
             <div class="back">
 
                 <div style="width: 20%;">
@@ -681,12 +683,18 @@
                         Up to <br><strong style="color: white; font-size:40px">1.5x faster</strong><br> CPU performance than M2<sup ><a href="#footnote-7" style="color: grey; font-size:13px;">4</a></sup>
                     </figure>
                 </div>
-            </div>
+            </div></div>
+            <div class="popup4showflx2">
+                <div class="popup4showflx">
+                    <div id="hidtxt4" class="hidden" style="margin-right:27px;">Learn how M4 powers performance</div>
+                    <button class="popup4show hidden" onclick="showpopup4()"><i id="itag4" class="fa-solid fa-plus hidden" style="color: #ffffff;font-size:21px;"></i></button></div>
         </div>
+
     </section>
     <div class="OS">
-        <div class="OS_hd">iPadOS and apps. </div >
-        <div class="OS_hd">Workflow workhorses.</div >
+        <div class="flexdiv" style="flex-direction: column;">
+        <div class="OS_hd" style="width: 750px; display:flex;justify-content:flex-start;">iPadOS and apps. </div>
+        <div class="OS_hd">Workflow workhorses.</div></div>
         <video class="osimgcl" muted  src="resources/osvid.mp4"></video >
         <div class="osdesc">
             <div class="osdesc1">
@@ -716,6 +724,12 @@
                 <div>Shapr3D</div>
             </div>
         </div>
+        <div class="popup5showflx2">
+            
+            <div class="popup5showflx">
+                <div id="hidtxt5" class="hidden" style="margin-right:27px;">Explore what you can do on iPad</div>
+                <button class="popup5show hidden" onclick="showpopup5()"><i id="itag5" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+        </div>
     </div >
     <div class="pencil">
         <div class="pencilhd">Apple Pencil Pro. </div>
@@ -737,6 +751,12 @@
                 <span class="pencillnk1"><i class="fa-solid fa-chevron-right fa" style="color: #318CE7"></i></span >
             </a>
         </div>
+        <div class="popup6showflx2">
+            <div class="popup6showflx">
+                <div id="hidtxt6" class="hidden" style="margin-right:27px;">
+                    View Apple Pencil Pro in action</div>
+                    <button class="popup6show hidden" onclick="showpopup6()"><i id="itag6" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+        </div>
     </div>
     <div class="keyboard">
         <div class="keyboardhd">Magic Keyboard. </div>
@@ -751,11 +771,17 @@
             <div>keyboard includes a function row and a larger glass trackpad with</div>
             <div>haptic feedback for precise work and Multi‑Touch gestures.</div>
         </div>
+        <div class="flexdiv">
         <a class="keyboardlnk" href="https://www.apple.com/apple-pencil/">
-            <span class="lnksub">Learn more about keyboards for iPad</span >
+            <span class="lnksub">Learn more about keyboards for iPad&nbsp;</span >
             <span class="pencillnk1"><i class="fa-solid fa-chevron-right fa" style="color: #318CE7"></i></span >
-        </a>
+        </a></div>
         <div class="keyboardvid"><video class="kbvpl" muted src="resources/keyboard.mp4"></video ></div>
+        <div class="popup7showflx2">
+            <div class="popup7showflx">
+                <div id="hidtxt7" class="hidden" style="margin-right:27px;">Tap into the new Magic Keyboard</div>
+                <button class="popup7show hidden" onclick="showpopup7()"><i id="itag7" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+        </div>
     </div>
     <div class="recording">
         <div class="recorddesc">
@@ -778,7 +804,9 @@
                 <div>dramatically better document </div>
                 <div>scans enhanced by AI.</div>
             </div>
+            
         </div>
+        <div class="center">
         <div class="mediarecrd">
             <div class="rcrdframe"><img src="resources/recordingframe.jpg"></div>
             <video class="recordingvid" muted src="resources/recordingvid.mp4"></video >
@@ -788,17 +816,17 @@
                 <div>
                     <img src="resources/rcrdlogo1.png">
                     <div class="whitesm">
-                        <div>12MP Wide camera  </div  >
+                        <div>12MP Wide camera  </div>
                         <div class="grytxt">with adaptive</div>
                     </div>
-                    <div class="grytxt">True Tone flash.</div >
+                    <div class="grytxt">True Tone flash.</div>
                 </div>
                 <div>
                     <img src="resources/rcrdlogo2.png">
                     <div>Landscape 12MP Ultra Wide </div>
                     <div class="whitesm">
                         <div>camera</div>
-                        <div class="grytxt">with support for </div >
+                        <div class="grytxt">with support for </div>
                     </div>
                     <div class="grytxt">Center Stage.</div>
                 </div>
@@ -822,7 +850,14 @@
                     <div class="grytxt">rich audio.</div>
                 </div>
             </div>
+            
         </div>
+    </div>
+    <div class="popup8showflx2">
+        <div class="popup8showflx">
+            <div id="hidtxt8" class="hidden" style="margin-right:27px;">Explore the camera system</div>
+            <button class="popup8show hidden" onclick="showpopup8()"><i id="itag8" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+</div>
     </div>
     <div class="connect">
         <div class="connecthd">Dream big.</div>
@@ -852,12 +887,17 @@
                 <div class="lrgwt2">Wi-Fi 6E</div>
                 <div class="lrgwt2">5G</div>
             </div>
-        </div>
-    </div >
+    </div>
+
+        <div class="popup9showflx2">
+            <div class="popup9showflx">
+                <div id="hidtxt9" class="hidden" style="margin-right:27px;">Stay connected like a pro</div>
+                <button class="popup9show hidden" onclick="showpopup9()"><i id="itag9" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+        </div></div>
      </section>
      <section class="endprt">
          <div class="expanded"></div>
-        <div class="endbox1">
+        <div class="endbox1" style="opacity:1;">
             <div class="endbox1hd">
                 <div>Designed to make </div>
                 <div>a difference</div>
@@ -899,7 +939,13 @@
                     <div class="whitesmw">design.</div>
                 </div>
             </div>
-        </div  >
+            <div class="popup10showflx2">
+                <div class="popup10showflx">
+                    
+                    <div id="hidtxt10" class="hidden" style="margin-right:27px;">What iPad stands for</div>
+                    <button class="popup10show hidden" onclick="showpopup10()"><i id="itag10" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
+            </div>
+        </div>
         <div class="endhd1" >Why Apple is the best</div>
         <div class="endhd1">
             <div>place to buy iPad.</div>
@@ -975,7 +1021,7 @@
                 <span class="pencillnk1"><i class="fa-solid fa-chevron-right fa" style="color: #318CE7"></i></span >
             </a>
         </div>
-        <div class="endbox1 box2">
+        <div class="endbox1 box2" style="opacity: 1;">
             <div class="imgflxboxend">
                 <div class="col1end">
                     <img class="enddispimg" src="resources/ipadproendimg.jpg">
@@ -1054,7 +1100,7 @@
                         </a>
                     </div>
                     <div class="decorationline"></div >
-                    <div class="txtboxend">
+                    <div class="txtboxend" >
                         <div class="txtboxendhd">
                             <div>32.78 cm or 27.59 cm </div>
                             <div>(13″ or 11″)</div>
@@ -1089,6 +1135,11 @@
                         <div class="txtboxendp">Supports Magic Keyboard</div>
                     </div>
                 </div>
+            </div>
+            <div class="popup11showflx2">
+                <div class="popup11showflx">
+                    <div id="hidtxt11" class="hidden" style="margin-right:27px;">Compare all iPad models</div>
+                    <button class="popup11show hidden"><i id="itag11" class="fa-solid fa-plus hidden" style="color: #ffffff; font-size:21px;"></i></button></div>
             </div>
         </div>
         <div style="transform: translate(105px);padding-top:150px;">
@@ -1253,7 +1304,18 @@
     </div>
     </div>
      </section>
-
+     <div class="nav2 hidden" style="width: 100vw;display:flex;justify-content:center;align-items:center;position:fixed;top:0;background-color:rgba(20, 20, 21, 0.64);backdrop-filter:saturate(1) blur(20px);border-bottom:0.0084px solid rgb(255,255,247)">
+        <div style="display: flex;justify-content:space-between;align-items:center;width: 1024px;height:52px;padding-left:10px;padding-right:10px;">
+        <div> <a href="" style="font-weight: 600;font-size:21px;">iPad Pro</a></div>
+        <div style="display: flex;justify-content:space-evenly;width:382.6px;font-size:12px;color:rgba(22,22,23,0.8)">
+            <a href="" class="flexdiv" style="text-decoration: underline;text-underline-offset:21px;text-decoration-thickness:1px;">Overview</a>
+            <a href="" class="flexdiv">Tech Specs</a>
+            <a href="" class="flexdiv">Compare</a>
+            <a href="" class="flexdiv">Why iPad</a>
+            <a href="" style="background-color: rgb(0,113,227);border-radius:30px;width:40px;height:25px;display:flex;justify-content:center;align-items:center;">Buy</a>
+        </div>
+    </div>
+     </div>
 </div>
     <div class="container_popup_vid">
         <div class="container_close_btn"><button type="button " onclick="close_popup_vid() " class="close_popup_vid "><i class="fa-solid fa-xmark" style="color: #c6c6c6;"></i></button></div>
@@ -1264,77 +1326,236 @@
         </div>
 
     </div>
-    <div class="mainflxboxpopup2">
-        <div class="mainflxboxpopup2part1">
-            <div class="heading1popup2">Thrill. Sleeker.</div>
-            <img src="resources/popup2img1.jpg" class="popup2img1"></img>
-
-        </div>
-        <div class="mainflxboxpopup2part2">
-            <img src="resources/popup2img2.jpg" class="popup2img2"></img>
-            <div class="mainflxboxpopup2part2_txt">
-                <div class="popup2part2headcnt">
-                    <div class="popup2part2head">A powerhouse</div>
-                    <div class="popup2part2head">of portability.</div>
-                </div>
-                <div class="popup2part2p">iPad Pro combines next-level </div>
-                <div class="popup2part2p">performance with an ultrasleek  </div>
-                <div class="popup2part2p">design so you can do your best </div>
-                <div class="popup2part2p">work anywhere you go. The </div>
-                <div class="popup2part2pm1">
-                    <div class="popup2part2p">13‑inch model is nearly</div>
-                    <div class="popup2part2pwhite1">a quarter</div>
-                </div>
-                <div class="popup2part2pm1">
-                    <div class="popup2part2pwhite2">of a pound lighter</div>
-                    <div class="popup2part2p">than the</div>
-                </div>
-                <div class="popup2part2p">previous generation, giving you  </div>
-                <div class="popup2part2p">unmatched capability  </div>
-                <div class="popup2part2p">and portability. </div>
+    <div  id="scrollablediv4">
+    <div class="flexdiv backdrop"  style="padding-bottom: 2370px;">
+        <div class="mainflxboxpopup2">
+            <div class="mainflxboxpopup2part1">
+                <div class="heading1popup2">Thrill. Sleeker.</div>
+                <img src="resources/popup2img1.jpg" class="popup2img1"></img>
             </div>
-        </div>
-        <div class="mainflxboxpopup2part3">
-            <div class="popup2part3head3">Gorgeous elements all </div>
-            <div class="popup2part3head3">around.</div>
-            <div class="popup2part3imgcnt">
-                <div class="popup2part3img_txt">
-                    <img class="popup2part3img1" src="resources/popup2img3.jpg"></img>
-                    <div class="popup2part3txt">
-                        <div>iPad Pro comes in two great </div>
-                        <div class="popup2part3txtwhite">
-                            <div>finishes — </div>
-                            <div class="popup2part3_white">Silver</div>
-                            <div>and new</div>
-                            <div class="popup2part3_white">Space </div>
-                        </div>
-
-                        <div class="popup2part3txtwhite">
-                            <div class="popup2part3_white">Black.</div>
-                            <div>The durable design is made </div>
-                        </div>
-                        <div>of 100 percent recycled aluminum</div>
-                        <div>in the enclosure.</div>
+            <div class="mainflxboxpopup2part2">
+                <img src="resources/popup2img2.jpg" class="popup2img2"></img>
+                <div class="mainflxboxpopup2part2_txt">
+                    <div class="popup2part2headcnt">
+                        <div class="popup2part2head">A powerhouse</div>
+                        <div class="popup2part2head">of portability.</div>
                     </div>
-                </div>
-                <div class="popup2part3img_txt">
-                    <img class="popup2part3img2" src="resources/popup2img4.jpg"></img>
-                    <div class="popup2part3txt">
-                        <div class="popup2part3txtwhite">
-                            <div>iPad Pro includes</div>
-                            <div class="popup2part3_white">100 percent recycled rare</div>
-                        </div>
-                        <div class="popup2part3txtwhite">
-                            <div class="popup2part3_white">earth elements </div>
-                            <div>in all magnets.</div>
-                        </div>
+                    <div class="popup2part2p">iPad Pro combines next‑level </div>
+                    <div class="popup2part2p">performance with an ultrasleek  </div>
+                    <div class="popup2part2p">design so you can do your best </div>
+                    <div class="popup2part2p">work anywhere you go. The </div>
+                    <div class="popup2part2pm1">
+                        <div class="popup2part2p">13‑inch model is nearly</div>
+                        <div class="popup2part2pwhite1">a quarter</div>
                     </div>
+                    <div class="popup2part2pm1">
+                        <div class="popup2part2pwhite2">of a pound lighter</div>
+                        <div class="popup2part2p">than the</div>
+                    </div>
+                    <div class="popup2part2p">previous generation, giving you  </div>
+                    <div class="popup2part2p">unmatched capability  </div>
+                    <div class="popup2part2p">and portability. </div>
                 </div>
             </div>
-
-        </div>
-        <div class="close_btnpop2"<button type="button" class="closepopup2" onclick="closepopup2()"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></button></div>
-    </div>
+            <div class="mainflxboxpopup2part3">
+                <div class="starter">
+                <div class="popup2part3head3">Gorgeous elements all </div>
+                <div class="popup2part3head3">around.</div>
+            </div>
+                <div class="popup2part3imgcnt">
+                    <div class="popup2part3img_txt">
+                        <img class="popup2part3img1" src="resources/popup2img3.jpg"></img>
+                        <div class="popup2part3txt">
+                            <div>iPad Pro comes in two great </div>
+                            <div class="popup2part3txtwhite">
+                                <div>finishes — </div>
+                                <div class="popup2part3_white">Silver</div>
+                                <div>and new</div>
+                                <div class="popup2part3_white">&nbsp;Space </div>
+                            </div>
+    
+                            <div class="popup2part3txtwhite">
+                                <div class="popup2part3_white">Black.</div>
+                                <div>The durable design is made </div>
+                            </div>
+                            <div>of 100 percent recycled aluminum</div>
+                            <div>in the enclosure.</div>
+                        </div>
+                    </div>
+                    <div class="popup2part3img_txt">
+                        <img class="popup2part3img2" src="resources/popup2img4.jpg"></img>
+                        <div class="popup2part3txt">
+                            <div class="popup2part3txtwhite">
+                                <div>iPad Pro includes</div>
+                                <div class="popup2part3_white">100 percent recycled rare</div>
+                            </div>
+                            <div class="popup2part3txtwhite">
+                                <div class="popup2part3_white">earth elements </div>
+                                <div>in all magnets.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="close_btnpop2"><button type="button" class="closepopup2 backdrop" onclick="closepopup2()"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></button></div>
+        </div></div></div>
+        <div id="scrollablediv3" >
+        <div class="flexdiv backdrop" style="height:5600px;">
+            <div class="mainflxboxpopup3">
+                <div class="mainflxboxpopup3part1">
+                    <div class="heading1popup3">The world’s</div>
+                    <div class="heading1popup3">most advanced</div>
+                    <div class="heading1popup3">display.</div>
+                </div>
+                <div class="mainflxboxpopup3part2">
+                    <div class="mainflxboxpopup3part2_">
+                        <div class="popup3part2headcnt">
+                            <div class="popup3part2head">OLED it shine</div>
+                        </div>
+                        <video
+                            class="popup3pt2vid"
+                            muted
+                            src="resources/popup3pt2vid.mp4" 
+                        ></video>
+                        <button class="playpausepopup3pt2"><span class="typography-site-play-pause-button" style="display: flex;justify-content:center; cursor:pointer;">
+                            <span class="playing8">Pause <i class="fa-regular fa-circle-pause" style="color: rgb(41, 151, 255)"></i></span>
+                            <span class="paused8 hidden">Play <i class="fa-regular fa-circle-play" style="color: rgb(41, 151, 255)"></i></span>
+                            <span class="ended8 hidden">Replay <i class="fa-solid fa-arrow-rotate-right" style="color: rgb(41, 151, 255)"></i></span>
+                        </span></button>
+                        <div class="popup3part2p">
+                            The Ultra Retina XDR display delivers extraordinary
+                            full-screen brightness
+                        </div>
+                        <div class="popup3part2p" style="margin-left:20px;">
+                            and unparalleled precision built on breakthrough tandem
+                            OLED technology.
+                        </div>
+                        <div class="popup3part2pm1">
+                            <div class="popup3part2p" style="margin-left:10px;">The combined light of</div>
+                            <div class="popup3part2pwhite">two OLED panels</div>
+                            <div class="popup3part2p">
+                                generates amazing brightness and
+                            </div>
+                        </div>
+                        <div class="popup3part2p" style="margin-right:360px;">
+                            extreme dynamic range performance.
+                        </div>
+                    </div>
+                </div>
+                <div class="mainflxboxpopup3part3">
+                    <div class="popup3part3_1">
+                        <div class="popup3part3_1_head">
+                            <div>Peak visual</div>
+                            <div>performance.</div>
+                        </div>
+                        <div class="popup3part3_1_p">
+                            <div class="pt-5">
+                                The color and luminance of each pixel is controlled
+                            </div>
+                            <div class="pt-5">
+                                down to the submillisecond, enabling <span style="color: #ffffff;">next‑level</span>
+                            </div>
+                            <div class="pt-5" style="padding-top:5px;">
+                               <span style="color: #ffffff;"> XDR performance.</span> The Ultra Retina XDR display is
+                            </div>
+                            <div class="pt-5">even more responsive to content in motion.</div>
+                        </div>
+                    </div>
+                    <img
+                        class="popup3pt3_img1"
+                        src="resources/popup3pt3_1_bg.png"
+                    />
+                    <div class="popup3pt3imgcnt">
+                        <div class="popup3pt3img2">
+                            <img src="resources/popup3pt3_2.jpg" />
+                            <div class="popup3pt3img2head">
+                                Precision specular highlights
+                            </div>
+                            <div class="popup3pt3img2p">
+                                convey more true-to-life details
+                            </div>
+                            <div class="popup3pt3img2p">
+                                and accurate reflections of light in
+                            </div>
+                            <div class="popup3pt3img2p">
+                                every image. So breathtaking HDR
+                            </div>
+                            <div class="popup3pt3img2p">
+                                landscapes, textures, and tones
+                            </div>
+                            <div class="popup3pt3img2p">
+                                feel even more vibrant and
+                            </div>
+                            <div class="popup3pt3img2p">realistic.</div>
+                        </div>
+                        <div class="popup3pt3img3">
+                            <img src="resources/popup3pt3_3.jpg" />
+                            <div class="popup3pt3img2head">
+                                2,000,000:1 contrast ratio
+                            </div>
+                            <div class="popup3pt3img2p">
+                                delivers deeper blacks for extreme
+                            </div>
+                            <div class="popup3pt3img2p">
+                                dynamic range. There is pinpoint
+                            </div>
+                            <div class="popup3pt3img2p">
+                                brightness in the stars and
+                            </div>
+                            <div class="popup3pt3img2p">
+                                incredible detail in low light
+                            </div>
+                            <div class="popup3pt3img2p">and shadows.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainflxboxpopup3part4">
+                    <div class="mainflxboxpopup3part2_">
+                        <div class="popup3part2headcnt">
+                            <div class="popup3part2head">
+                                <div>Nano-texture glass.</div>
+                                <div>Brilliant in any light.</div>
+                            </div>
+                        </div>
+                        <video
+                            class="popup3pt4vid"
+                            muted
+                            src="resources/popup3pt4vid.mp4"
+                        ></video>
+                        <button class="playpausepopup3pt4"><span class="typography-site-play-pause-button" style="display: flex;justify-content:center; cursor:pointer;">
+                            <span class="playing9">Pause <i class="fa-regular fa-circle-pause" style="color: rgb(41, 151, 255)"></i></span>
+                            <span class="paused9 hidden">Play <i class="fa-regular fa-circle-play" style="color: rgb(41, 151, 255)"></i></span>
+                            <span class="ended9 hidden">Replay <i class="fa-solid fa-arrow-rotate-right" style="color: rgb(41, 151, 255)"></i></span>
+                        </span></button>
+                        <div class="popup3part2p" >
+                            Nano‑texture display glass is a new option that’s
+                            perfect for high‑end, color-
+                        </div>
+                        <div class="popup3part2p" style="padding-right:2px;">
+                            managed workflows or the most demanding ambient lighting
+                            environments.
+                        </div>
+                        <div class="popup3part2p" style="padding-right:10px;">
+                            Precisely etched at a nanometer scale, nano‑texture
+                            glass maintains image
+                        </div>
+                        <div class="popup3part4pm1" style="padding-right:55px;">
+                            <div class="popup3part2p" >
+                                quality and contrast while scattering ambient light
+                                for
+                            </div>
+                            <div class="popup3part2pwhite">even less glare.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close_btnpop3">
+                    <button type="button" class="closepopup3 backdrop" onclick="closepopup3()">
+                        <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff"></i>
+                    </button>
+                </div>
+            </div></div></div>
+           <div class="flexdiv full1" style="width: 100vw;height:100vh;position:absolute;top:0;">
     <div class="width1">
         <div class="sticky1"><div class="closepopupdiv31"><button class="closepopup31"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
     </div>
@@ -1348,7 +1569,9 @@
      <a href="" class="padding-top1">Learn more</a>
     </div>
     </div>
-    </div>
+    </div></div> 
+    <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;">
+
     <div class="width2">
         <div class="sticky2"><div class="closepopupdiv32"><button class="closepopup32"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
     </div>
@@ -1362,7 +1585,9 @@
          <a href="" class="padding-top2">Learn more</a>
         </div>
         </div>
-        </div>
+        </div></div>
+        <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;">
+
         <div class="width3">
             <div class="sticky3"><div class="closepopupdiv33"><button class="closepopup33"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
         </div>
@@ -1378,7 +1603,8 @@
             </div>
             </div>
             </div>
-            
+            </div>
+           <!-- <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;"> -->
             <div id="scrollablediv" >
             <div class="width4">
                 <div class="sticky4"><div class="closepopupdiv34"><button class="closepopup34"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
@@ -1406,9 +1632,10 @@
                  <a href="" class="padding-top4">Learn more</a>
                 </div>
                 </div>
-            
             </div>
             </div>
+            <!-- </div> -->
+           <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;">
             <div class="width5">
                 <div class="sticky5"><div class="closepopupdiv35"><button class="closepopup35"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
             </div>
@@ -1422,7 +1649,9 @@
                  <a href="" class="padding-top5">Learn more</a>
                 </div>
                 </div>
-                </div>
+                </div></div>
+                <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;">
+
                 <div class="width6">
                     <div class="sticky6"><div class="closepopupdiv36"><button class="closepopup36"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
                 </div>
@@ -1456,7 +1685,8 @@
                      <a href="" class="padding-top6">Reserve an in‑store shopping session</a>
                     </div>
                     </div>
-                    </div>
+                    </div></div>
+           <div class="flexdiv" style="width: 100vw;height:100vh;position:absolute;top:0;">
                     <div class="width7">
                         <div class="sticky7"><div class="closepopupdiv37"><button class="closepopup37"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
                     </div>
@@ -1471,7 +1701,10 @@
                         </div>
                         </div>
                         </div>
-                        <div id="scrollablediv2">
+                        </div>
+                       
+                        <div id="scrollablediv2" >
+                            
                         <div class="width8">
                             <div class="sticky8"><div class="closepopupdiv38"><button class="closepopup38"><i class="fa-solid fa-xmark" style="color: white; font-size:20px"></i></button></div>
                         </div>
@@ -1492,26 +1725,867 @@
                              <div style="padding-top: 20px;font-size: 19px;">
                              <a href="" class="padding-top8">Download the Apple Store app</a>
                             </div>
+                            </div></div>
+                       </div>
+                       <div id="scrollablediv5">
+                       <div class="flexdiv bacdrop" style="backdrop-filter: blur(20px);
+    background-color: rgba(50, 50, 50, 0.48);" >   
+                        <div class="mainflxboxpopup4">
+                           
+                            <div class="popup4pt12"><div class="popup4pt12hd">M4. Rocket chip.</div></div>
+                            <div class="popup4pt22"><div class="popup4pt22hd"><div>Extreme performance <br> by design.</div></div>
+                                <div class="popup4pt22img">
+                                    <img src="resources/popup4pt2.jpg"/>
+                                </div>
+                                <div class="popup4pt22p">
+                                    <div>
+                                        M4 is built on second-generation 3-nanometer technology
+                                        that’s
+                                    </div>
+                                    <div class="popup4pt22pm1">
+                                        <div class="popup4pt22pw">even more power efficient </div>
+                                        <div>&nbsp; and delivers all-day battery life.5 The CPU</div>
+                                    </div>
+                                    <div style="margin-left: 15px;">
+                                        includes up to four performance cores and six efficiency
+                                        cores for
+                                    </div>
+                                    <div style="margin-left: 40px;">
+                                        advanced tasks like instantly adding demanding effects
+                                        to 4K video.
+                                    </div>
+                                </div>
+                                <div class="flexdiv" style="flex-direction: column;"><div class="popup4pt22hd2">M4 compared to previous iPad Pro models with M2</div><div class="popup4pt22comp1">
+                                    <div class="comp1bar">
+                                        <div class="comp1bar1"></div>
+                                        <div class="comp1bar2"></div>
+                                        <div class="comp1bartxt">10-core CPU performance</div>
+                                    </div>
+                                    <div class="comp1txt">
+                                        <div class="comp1smalltxt">Up to</div>
+                                        <div class="comp1largetxt">1.5x</div>
+                                        <div class="comp1smalltxt" style="padding-left: 2px;">faster</div>
+                                    </div>
+                                </div>
+                                <div class="popup4pt22comp2">
+                                    <div class="comp2bar">
+                                        <div class="comp2bar1"></div>
+                                        <div class="comp2bar2"></div>
+                                        <div class="comp1bartxt">120 GB/s memory bandwidth</div>
+                                    </div>
+                                    <div class="comp2txt">
+                                        <div class="comp1largetxt">1.2x</div>
+                                        <div class="comp1smalltxt" style="padding-left: 2px;">faster</div>
+                                    </div>
+                                </div>
+                                <div class="popup4pt22comp2" style="gap:85px;">
+                                    <div class="comp2bar">
+                                        <div class="comp3bar1"></div>
+                                        <div class="comp3bar2"></div>
+                                        <div class="comp1bartxt">3D render performance</div>
+                                    </div>
+                                    <div class="comp1txt">
+                                        <div class="comp1smalltxt">Up to</div>
+                                        <div class="comp3largetxt">4x</div>
+                                        <div class="comp1smalltxt">faster</div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="flexdiv" style="flex-direction: column;">
+                                <div class="popup4pt22hd3">Graphics at light speed.</div>
+                                <div class="comp_pic">
+                                    <div class="comp_pic_cnt">
+                                        <img class="rton" src="resources/popup4pt2comp_rton.jpg"/>
+                                        <img class="rtoff" src="resources/popup4pt2comp_rtoff.jpg"/>
+                                        <div class="slider-line"></div>
+                                        <div class="slider-icon">
+                                            <i class="fa-solid fa-angle-left" style="color: #ffffff" ></i>
+                                            <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+                                        </div>
+                                        <input type="range" class="slider" min="0" max="100" />
+                                    </div>
+                                </div>
+                                <div class="comp_pic_txt">
+                                    <div style="margin-right: 80px;">Ray tracing on</div>
+                                    <div>Ray tracing off</div>
+                                </div>
+                                <div class="comp_pic_txtp">
+                                    <div>
+                                        The next-generation GPU architecture of M4 brings even
+                                    </div>
+                                    <div>
+                                        faster rendering performance and hardware-accelerated
+                                        ray
+                                    </div>
+                                    <div>
+                                        tracing to iPad for the first time. So light, shadows,
+                                        and
+                                    </div>
+                                    <div class="comp_pic_txtpbw">
+                                        <div>reflections in pro apps and games look</div>
+                                        <div class="comp_pic_txtpw">incredibly vibrant</div>
+                                    </div>
+                                    <div class="comp_pic_txtpw">and realistic.</div>
+                                </div>
+                            </div>
+                                <div class="popup4pt22img_2">
+                                    <img class="popup4pt22img_2_" src="resources/popup4pt2_2.jpg"/>
+                                </div>
+                                <div class="flexdiv">
+                                <div class="popup4pt22_2flx">
+                                    <div class="popup4pt22_2_1">
+                                        <div>Dynamic Caching optimizes</div>
+                                        <div>on‑chip memory to increase</div>
+                                        <div>power efficiency and <span style="color: white;">boost</span></div> 
+                                        <div><span style="color: white;">graphics performance</span>&nbsp;in all kinds</div>
+                                        <div>of apps and games.</div>
+                                    </div>
+                                    <div class="popup4pt22_2_1">
+                                        <div>Hardware-accelerated mesh</div>
+                                        <div>shading uses improved geometry</div>
+                                        <div>processing to enable even <span style="color: #ffffff;">more</span></div>
+                                        <div style="color: #ffffff;">visually complex scenes.</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="_2imgtxtflx">
+                                    <div class="_2imgtxtflx1">
+                                        <div class="_2imgtxtflx1txt">
+                                            <div class="_2imgtxtflx1txthd">
+                                                <div>AI by the</div>
+                                                <div>power of M4.</div>
+                                            </div>
+                                            <div class="_2imgtxtflx1txtp">
+                                                <div class="pt-6">The M4 Neural Engine accelerates</div>
+                                                <div class="pt-6">AI workloads and takes machine</div>
+                                                <div class="pt-6">learning in iPadOS to the next</div>
+                                                <div class="pt-6">level. Capable of an astounding 38</div>
+                                                <div class="pt-6">trillion operations per second, M4</div>
+                                                <div class="pt-6">lets you do things like isolate a</div>
+                                                <div class="pt-6">subject from its background in 4K</div>
+                                                <div class="pt-6">video with just a tap in</div>
+                                                <div class="pt-6">Final Cut Pro or <span style="color: #ffffff;">automatically</span></div>
+                                                <div class="pt-6" style="color: #ffffff;">create musical notation in real</div>
+                                                <div class="pt-6"><span style="color: #ffffff;">time</span> as you play a piano using</div>
+                                                <div class="pt-6">StaffPad.</div>
+                                            </div>
+                                        </div>
+                                        <img class="_2imgtxtflx1pic" src="resources/popup4pt2_3.jpg"/>
+                                    </div>
+                                    <div class="_2imgtxtflx2">
+                                        <img
+                                            class="_2imgtxtflx2pic"
+                                            src="resources/popup4pt2_4.jpg"
+                                        />
+                                        <div class="_2imgtxtflx2txt">
+                                            <div class="_2imgtxtflx1txthd2">38 trillion</div>
+                                            <div class="_2imgtxtflx1txtp2">
+                                                operations per second
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="transform: translateY(-100px);">
+                                <div class="popup4pt22hd_4">
+                                    <div>Watch and work in</div>
+                                    <div>high resolution.</div>
+                                </div>
+                                <div class="popup4pt22lst_piccnt">
+                                    <img class="popup4lst1" src="resources/popup4lst1.jpg" />
+                                    <img class="popup4lst2" src="resources/popup4lst2.jpg" />
+                                </div>
+                                <div class="flexdiv" style="transform: translateY(-180px);">
+                                <div class="popup4lsttxt">
+                                    <div class="popup4lsttxt1">
+                                        <div class="pt-6">A more advanced Media Engine</div>
+                                        <div class="pt-6">with <span style="color: #ffffff;">hardware acceleration for</span></div>
+                                        <div class="pt-6"><span style="color: #ffffff;">AV1</span> allows more power-efficient</div>
+                                        <div class="pt-6">playback of high-resolution video.</div>
+                                    </div>
+                                    <div class="popup4lsttxt2">
+                                        <div class="pt-6">Play back and edit <span style="color: #ffffff;">up to five</span></div>
+                                        <div class="pt-6"><span style="color: #ffffff;">streams of 4K ProRes</span> footage.</div>
+                                        <div class="pt-6">From sophisticated 3D rendering</div>
+                                        <div class="pt-6">to graphics-heavy post-</div>
+                                        <div class="pt-6">production, you can take on</div>
+                                        <div class="pt-6">advanced workflows at the studio</div>
+                                        <div class="pt-6">or on location.</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div style="bottom: -160px;transform:translateY(-180px);
+                    position: sticky;">
+                            <div class="close_btnpop4">
+                                <button type="button" class="closepopup4 backdrop" onclick="closepopup4()">
+                                    <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff"></i>
+                                </button>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="scrollablediv6">
+            <div class="flexdiv backdrop">
+                <div class="maincontentbox">
+                    <div class="headingpopup">
+                        <div class="headingpopup1">iPadOS and apps <br>
+                            Workflow workhorses.</div>
+                        <img src="resources/hero__mdl3lpkglcia_large_2x.jpg" alt="heading" width="100%">
+                    </div>
+                    <div class="flexdiv">
+                        <div class="mt-200">
+                    <div class="headingpopup2">
+                        <div class="headingpopup2part1">All done. With the<br> power of touch. </div>
+                        <div class="headingpopup2text" >
+                        <div >iPadOS is easy to use and <span class="whitecolor">designed for the&nbsp;unique capabilities of iPad.</span> Intuitive touch navigation makes it all a breeze — even for the most pro workflows. And iPadOS takes advantage of the accelerated machine learning abilities of M4 to enable advanced AI features across a broad array&nbsp;of apps.</div>
+                    </div>
+                    
+                </div>
+                    <img src="resources/touch__cjrmfob9kwwi_large_2x.jpg" alt="touch"  style="width: 1400px;height:778px;">
+                </div>
+            </div>
+            
+            <div class="headingpopup3">
+                <div class="flexdiv" style="align-items: flex-start;margin-left:40px;">
+                <div class="headingpopup3part1">Apps for all kinds<br> of amazing.</div>
+                <div class="headingpopup3text">
+                    <div class="pd-30">
+                    Pro apps unleash the extraordinary things you can do with iPad Pro. With essential built-in apps and <span class="whitecolor">over a million apps on the App Store</span> designed specifically for the unique capabilities of iPad, iPadOS is an ideal platform for work, play, and&nbsp;creativity.</div>
+                   <div> <a href="">Explore apps for iPad</a></div>
+                </div>
+            </div>
+            <div>
+            <img src="resources/app_wall__clj471mcd2c2_large.jpg" alt="photoframe" width="100%" height="1132px">
+            <div class="subtitles"></div></div>
+            <div class="flexdiv">
+            <div class="headingpopup4">
+                <div class="headingpopup4part1 md-30">iPro studios on the go.</div>
+                <div class="headingpopup4text md-30">Transform your iPad into <span class="whitecolor">a versatile production studio.</span> Seamlessly connect up to four iPhone or iPad devices with Live Multicam in Final Cut Pro for iPad to record, edit, and share videos even faster. And new AI-powered Session Players in Logic Pro for iPad take your feedback to perform on the fly.</div>
+                <div class="md-20"><a href="">Learn more about Final Cut Pro for iPad</a></div>
+                <div class="md-80"><a href="">Learn more about Logic Pro for iPad</a></div>
+            </div>
+        </div>
+                <div class="images md-80">
+                    <img src="resources/final_cut_pro__fq5r4kgm3eie_large.jpg" width="47.4%" alt="phone1">
+                    <img src="resources/logic_pro__cwzmtduhfe6a_large.jpg" width="47.4%" alt="phone2">
+                </div>
+                
+                </div>
+                <div class="closepopupdiv8">
+                    <button class="closepopup8 backdrop" onclick="closepopup5()"><i class="fa-solid fa-xmark" style="color: white; font-size:25px"></i></button></div>
+        </div>
+            </div></div>
+            <div id="scrollablediv7">
+            <div class="flexdiv backdrop">
+                <div class="subsection-wrapper">
+                   
+                            <div class="hero14">
+                                    <img src="resources/hero__md_large.jpg" alt="Apple Pencil Pro, user is drawing on iPad Pro" style="position:absolute; top:160px;">                
+                                <h2 class="hero-headline14">Apple&nbsp;Pencil&nbsp;Pro. <br> Engineered for <br> limitless creativity.</h2>           
+            
+                            </div>
+                        
+                    <div class="content-wrapper1">
+                        <div>
+                            <div style="background-color: rgb(23, 23, 23);">
+                                <div class="pencil_feat">
+                                <div class="justify">
+                                <h3 class="typography-headline1">Intuitive <br>and&nbsp;precise <br>creative&nbsp;control.</h3>
+            
+                                <div class="feature-intro-block">
+                                    
+                                    <p >
+                                        <h4 style="display: inline; color:white;">Squeeze.</h4>Apple&nbsp;Pencil&nbsp;Pro can sense when you squeeze it and brings up&nbsp;a new palette, so you can quickly switch tools, line weights and colours.</p>
+                                </div>
+                            </div>
+                                <img src="resources/squeeze___large.jpg" alt="icon" style="width: 1400px;">
+            
+                            </div>
+                                
+                                        <div class="video-wrapper1">
+                                            <video id="pencil-pro-squeeze" autoplay muted src="resources/large_2x25.webm"></video>
+                                        </div>
+                                        <div  >
+                                            <div class="flex12">
+                                            <button class="play-pause-button" style="background-color: rgb(23, 23, 23);" >
+                                                <span class="typography-site-play-pause-button" style="display: flex;justify-content:center; cursor:pointer;color: rgb(41, 151, 255)">
+                                                    <span class="playing5">Pause <i class="fa-regular fa-circle-pause" style="color: rgb(41, 151, 255)"></i></span>
+                                                    <span class="paused5 hidden">Play <i class="fa-regular fa-circle-play" style="color: rgb(41, 151, 255)"></i></span>
+                                                    <span class="ended5 hidden">Replay <i class="fa-solid fa-arrow-rotate-right" style="color: rgb(41, 151, 255)"></i></span>
+                                                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="pencil-features-list" style="background-color: rgb(23, 23, 23);">
+                                <div class="feat">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <video id="pencil-pro-feature-1" src="resources/large_2x27.mp4"></video>  
+                                        </div>
+                                        <div>
+                                            <button class="play-pause1">
+                                                <div class="playing1 hidden" >
+                                                    <i class="fa-sharp fa-solid fa-pause" style="color: white;"></i>
+                                                </div>
+                                                <div class="paused1">
+                                                    <i class="fa-solid fa-play" style="padding-left: 3px; padding-bottom:3px; font-size:18px; color: white;"></i>
+                                                </div>
+                                                <div class="ended1 hidden">
+                                                    <i class="fa-solid fa-arrow-rotate-right" style="color: white;"></i>                                    </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="feature-intro-block2" >
+                                        <p>
+                                        <h4 style="display: inline; color:white;">Barrel roll.</h4>
+            
+                                            A new gyroscope allows you to rotate Apple&nbsp;Pencil&nbsp;Pro for precise control of shaped pen and brush tools.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <video id="pencil-pro-feature-2" src="resources/large_2x28.mp4"></video>                            
+                                        </div>
+                                        <div>
+                                            <button class="play-pause" style="margin-left: 440px;">
+                                                <div class="playbuttonvid2 playing2 hidden" >
+                                                    <i class="fa-sharp fa-solid fa-pause" style="color: white;"></i>
+                                                </div>
+                                                <div class="paused2">
+                                                    <i class="fa-solid fa-play" style="padding-left: 3px; padding-bottom:3px; font-size:18px; color: white;"></i>
+                                                </div>
+                                                <div class="ended2 hidden">
+                                                    <i class="fa-solid fa-arrow-rotate-right" style="color: white;"></i>                                    </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="feature-intro-block3" style="margin-left: 40px;">                          
+                                        <p>
+                                            <h4 style="display: inline; color:white;">Haptic feedback.</h4>
+                                            A custom haptic engine provides precise feedback that you can&nbsp;feel. When you squeeze or double‑tap, you’ll feel a&nbsp;light pulse confirming the action.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="feat">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <video id="pencil-pro-feature-3" src="resources/large_2x29.mp4"></video>   
+                                        </div>
+                                        <div>
+                                            <button class="play-pause">
+                                                <div class="playing3 hidden" >
+                                                    <i class="fa-sharp fa-solid fa-pause" style="color: white;"></i>
+                                                </div>
+                                                <div class="paused3">
+                                                    <i class="fa-solid fa-play" style="padding-left: 3px; padding-bottom:3px; font-size:18px; color: white;"></i>
+                                                </div>
+                                                <div class="ended3 hidden">
+                                                    <i class="fa-solid fa-arrow-rotate-right" style="color: white;"></i>                                    </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="feature-intro-block3" style="width: 95%;">
+                                        <p>
+                                        <h4 style="display: inline; color:white;">Apple Pencil hover.</h4>
+                                        Preview exactly where your Apple&nbsp;Pencil will touch down on your display and see a virtual shadow of your tool. So you can write, sketch and illustrate with even greater precision.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="feature-4">
+                                    <div class="pencil-pro-feature-4 custom-ui-button with-media-ui with-media-ui-button">
+                                        <div>
+                                            <video id="pencil-pro-feature-4" src="resources/large_2x30.mp4"></video> 
+                                        </div>
+                                        <div>
+                                            <button class="play-pause4" >
+                                                <div class="playing4 hidden" >
+                                                    <i class="fa-sharp fa-solid fa-pause" style="color: white;"></i>
+                                                </div>
+                                                <div class="paused4">
+                                                    <i class="fa-solid fa-play" style="padding-left: 3px; padding-bottom:3px; font-size:18px; color: white;"></i>
+                                                </div>
+                                                <div class="ended4 hidden">
+                                                    <i class="fa-solid fa-arrow-rotate-right" style="color: white;"></i>                                    </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="feature-intro-block2">
+                                        <p>
+                                        <h4 style="display: inline; color:white;">Double-tap.</h4>
+                                            Quickly switch between tools, like&nbsp;a&nbsp;pen and eraser, with a double-tap on Apple&nbsp;Pencil&nbsp;Pro.</p>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="inspiration" >
+            
+                    <div class="pencil-inspiration" style="background-color: black;">
+                        <div class="content-area4">
+                            
+                                <h3 class="pencilh3"> <div>
+                                    Ready when 
+                                </div>
+                                    inspiration strikes.</h3>
+                                <div class="modal-section-content">
+                                <p class="description-copy-color5">Apple&nbsp;Pencil&nbsp;Pro pairs, charges and stores magnetically on the side of iPad&nbsp;Pro. And if you lose or misplace it, you can <strong style="color: white;">easily locate your Apple&nbsp;Pencil&nbsp;Pro</strong> in the Find&nbsp;My&nbsp;app.</p>
+                            </div>
+                           
+                                
+                               <img src="resources/charging_large.jpg" alt="Landscape orientation, Apple Pencil Pro connected to an iPad Pro, architectural drawing on the screen">
+                          
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="pencil-inspiration4">
+                        
+                    <div>
+                        <div class="typography-site-body5" >
+                            <p class="description-copy-color6">iPad&nbsp;Pro works with <span class="highlight11"><em>Apple&nbsp;Pencil&nbsp;Pro</em></span> and <span class="highlight11"><em>Apple&nbsp;Pencil (USB-C)</em></span>. <br><span style="display: flex; justify-content:center;">Two great options for all kinds&nbsp;of creativity.</span></p>
+                            <a href="/in/apple-pencil/">
+                                <span class="icon-wrapper10">Explore more Apple&nbsp;Pencil features
+                                </span>
+                                </a>
+                            <div class="options-container">
+                                <div>
+                                    <div class="optionsselect">
+                                    <div>
+                                        <div class="option-1">
+                                            <p style="color: orange; display:flex; justify-content: center">New</p>
+                                            <figcaption>Apple&nbsp;Pencil Pro</figcaption>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <figcaption>Apple&nbsp;Pencil (USB-C)</figcaption>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="resources/pencils_large.jpg" alt="Apple Pencil Pro, rounded end engraved Apple Pencil Pro, Apple Pencil USB-C, end cap engraved Apple Pencil." >
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="closepopupdiv7">
+                    <button class="closepopup7 backdrop" onclick="closepopup6()"><i class="fa-solid fa-xmark" style="color: white; font-size:25px"></i></button></div>
+                </div>
+                
+            </div></div>
+            <div id="scrollablediv8">
+            <div class="flexdiv backdrop">
+                <div class="containsall">
+                    <div class="hero12">
+                        <h2 class="hero-headline12">Magic<br> Keyboard. <br>Innovation is&nbsp;key.</h2>
+            
+            
+                        <img src="resources/hero__mdl3l_large.jpg"
+                            alt="iPad Pro attached to Magic Keyboard in landscape orientation, displaying an article and being edited"
+                            style="height: 800px; width:800px;">
+            
+            
+            
+                    </div>
+                    <div>
+                        <div class="keyboard-section">
+                            <img src="resources/profile__fzlarge.jpg"
+                                alt="Two models, side exterior, iPad Pro attached to Magic Keyboard in landscape orientation, floating cantilever design"
+                                style="width: 1300px; position:absolute;margin-left: 50px;">
+                            <div class="absolute">
+                                <h3 class="profile-headline">Sleek profile.<br> Chic protection.</h3>
+                                <p class="typography-site-body">Magic&nbsp;Keyboard comes in two colours that perfectly match
+                                    iPad&nbsp;Pro. It features <span class="highlight11"><em>machined aluminium</em></span>, a durable
+                                    outer cover and a USB‑C connector for pass-through charging.<sup><a class="footnote"
+                                            href="#footnote-4">1</a></sup> iPad
+                                    attaches to Magic&nbsp;Keyboard magnetically and the Smart Connector immediately connects power
+                                    and data without the need for Bluetooth, so it’s ready to use instantly.</p>
+                            </div>
+                        </div>
+                        <div class="keyboard-function-row">
+                            <div class="kwy">
+                                <h3 class="keyboard-function-row-headline">Full function row and then some.</h3>
+                                <p class="keyboard-function-row-copy">Type comfortably on an advanced design with backlit keys,
+                                    smoothly adjust angles to your comfort and use the <span class="highlight11"><em>new 14-key
+                                            function row</em></span> for convenient access to features like screen brightness or
+                                    volume&nbsp;controls.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="flexdiv">
+                            <img src="resources/function_row__large.jpg" alt="14-key function row of the Magic Keyboard">
+                        </div>
+                        <div class="keyboard-trackpad">
+                            <video id="trackpad-video" src="resources/large_2x24.mp4"
+                                style="width: 70%; height:70%"></video>
+                        </div>
+                        <div  >
+                            <div class="flex">
+                                <button class="play-pause-button" >
+                            <span class="typography-site-play-pause-button" style="display: flex;justify-content:center; cursor:pointer;color: rgb(41, 151, 255)">
+                                <span class="playing6">Pause <i class="fa-regular fa-circle-pause" style="color: rgb(41, 151, 255)"></i></span>
+                                <span class="paused6 hidden">Play <i class="fa-regular fa-circle-play" style="color: rgb(41, 151, 255)"></i></span>
+                                <span class="ended6 hidden">Replay <i class="fa-solid fa-arrow-rotate-right" style="color: rgb(41, 151, 255)"></i></span>
+                            </span>
+                            </button>
+                        </div>
+                        <div class="flexdiv">
+                            <div class="trackpad2">
+                                <h3 class="keyboard-trackpad-headline">Precision you&nbsp;can feel.</h3>
+                                <p class="keyboard-trackpad-copy ">Navigate large spreadsheets and comfortably highlight text with
+                                    a&nbsp;bigger, redesigned glass trackpad with <span class="highlight11"><em>haptic
+                                            feedback</em></span>. Conveniently scroll, swipe or use Multi‑Touch gestures for even
+                                    more productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="closepopupdiv6">
+                        <button class="closepopup6 backdrop" onclick="closepopup7()"><i class="fa-solid fa-xmark" style="color: white; font-size:28px"></i></button></div>
+                </div></div>
+            </div>
+            <div id="scrollablediv9">
+            <div class="flexdiv backdrop">
+                <div class="modal-overlay11" style="margin-top:60px;margin-bottom:10px;">
+                    <div>
+                        <div>
+                                               
+                                    <div class="content-area">
+                                        <div class="hero13">
+                                            <h2 class="hero-headline13">Mics. Cameras. Action.</h2>
+            
+                                            <div class="copycol"> <img src="resources/hero___large.jpg"
+                                                    alt="landscape orientation, iPad Pro, front exterior, displaying a photograph of a person outside, iPad Pro, back exterior, Pro Camera System">                              
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="content-area">
+                                    <div class="subsection-flex">
+                                        <img src="resources/smart_hdr.jpg"
+                                            alt="iPad Pro, displaying a photograph of a person in a colourful sweater being edited">
+                                        <div style="margin-left: 100px;">
+                                            <h3 class="headline22">Shoot, edit <br> and share <br>the beauty.</h3>
+            
+                                            <p class="modal-copy12">
+            
+                                                The advanced 12MP Wide camera makes iPad&nbsp;Pro a complete mobile studio for
+                                                creators. Capture detailed <span class="highlight11"><em>4K ProRes</em></span> video
+                                                and vibrant Smart&nbsp;HDR images with even better colour, improved textures and
+                                                increased detail in low light.</p>
+                                        </div>
+                                    </div>
+                                    <div class="subsection-flex">
+                                        <div style="margin-left: 100px;">
+                                            <h3 class="headline22">Scanning gets smarter.</h3>
+                                            <p class="modal-copy12" >The new adaptive True&nbsp;Tone flash dramatically <span
+                                                    class="highlight11"><em>improves document scanning</em></span> on iPad&nbsp;Pro.
+                                                The camera uses AI to detect documents like forms and receipts. If a shadow is in
+                                                the way, it takes multiple images with the True&nbsp;Tone flash and stitches them
+                                                together to create <span>a high-quality</span> scan without shadows
+                                                or glare.</p>
+                                        </div>
+                                        <img src="resources/docs__ge.jpg"
+                                            alt="Portrait orientation, iPad Pro, a document is being scanned in"
+                                            style="transform:translateX(100px)">
+                                    </div>
+                                    <div class="subsection-flex">
+            
+                                        <img src="resources/ar__large.jpg"
+                                            alt="iPad Pro, back exterior, space black, Pro Camera System, iPad Pro, front exterior, black display bezel, rounded corners">
+                                        <div style="margin-left: 120px;">
+                                            <h3 class="headline22">Measure and model it with&nbsp;a tap.</h3>
+                                            <p class="modal-copy12" style="width: 85%;">The LiDAR&nbsp;Scanner greatly enhances 3D workflows and enables
+                                                <span class="highlight11"><em>faster and more immersive AR experiences</em></span>. So
+                                                you can turn a quick scan into a 3D CAD project that you can edit in Trimble
+                                                SketchUp — all from&nbsp;one device.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="headline22" style="display: flex;justify-content:center;margin-bottom:0;">Stay front and centre.
+                                        </h3>
+                                        <div class="flexdiv">
+                                            <img src="resources/front_camera_hw.png" alt="icon"
+                                                style="position: absolute;">
+                                            <video id="front-camera-video" muted src="resources/large_2x23.mp4"></video>
+                                        </div>
+                                        <div class="inline-media-ui">
+                                            <div class="flex13">
+                                                <button class="play-pause-button">
+                                                    <span
+                                                        style="display: flex;justify-content:center; cursor:pointer;">
+                                                        <span class="playing7">Pause <i class="fa-regular fa-circle-pause"
+                                                                style="color: rgb(41, 151, 255)"></i></span>
+                                                        <span class="paused7 hidden">Play <i class="fa-regular fa-circle-play"
+                                                                style="color: rgb(41, 151, 255)"></i></span>
+                                                        <span class="ended7 hidden">Replay <i class="fa-solid fa-arrow-rotate-right"
+                                                                style="color: rgb(41, 151, 255)"></i></span>
+                                                    </span>
+                                                </button>
+            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="transform:translateY(-40px)">
+                                        <p class="modal-copy12" style="width: 680px;">The landscape 12MP Ultra Wide front-facing camera is <span
+                                                class="highlight11"><em>perfect&nbsp;for <span style="margin-left:70px"> video calls with
+                                                    Centre&nbsp;Stage</span></em></span>. And it works with&nbsp;the <span style="margin-left: 30px;">TrueDepth&nbsp;camera
+                                            to securely unlock iPad&nbsp;Pro with Face&nbsp;ID.</span></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="headline22" style="margin-left:260px;">Grab the mics. <br>Turn up the volume.</h3>
+                                    <p class="modal-copy12" style="width: 560px; height:120px; margin-left:270px;"><span
+                                            class="highlight11"><em>Record and play back rich audio</em></span> with four <span
+                                            >studio-quality</span> microphones and a four-speaker audio system with
+                                        support for Dolby&nbsp;Atmos.</p>
+                                    <div class="flexdiv" >
+                                        
+                                        <video id="mics-speakers-video" autoplay muted loop src="resources/large_2x22.mp4"></video>
+                                    
+                                        <img src="resources/mics_and_speakers.png" alt="icon"
+                                            style="position: absolute;width:1050px;margin-bottom:100px;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <div class="closepopupdiv5">
+                    <button class="closepopup5 backdrop" onclick="closepopup8()"><i class="fa-solid fa-xmark" style="color: white; font-size:25px"></i></button></div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div></div>
+            <div id="scrollablediv10">
+            <div class="flexdiv backdrop">
+                <div class="modal-overlay112" style="margin-top:60px;margin-bottom:10px;"><div>  
+                        
+                                <div class="hero">
+                                    <h2 class="hero-headline10">Dream&nbsp;big. <br>Connect&nbsp;fast.</h2>                          
+                                        <img src="resources/hero__md.jpg"  alt="iPad Pro attached to Magic Keyboard in landscape orientation, connected to an external display, images being edited on both" style="width: 1178px;height:860px;" >                 
+                                </div>
+                                <div>
+                                    <h3 class="headline">Plug it in. Go&nbsp;all&nbsp;out.</h3>
+                                    <div class="modal-copy11">
+                                        <p><span class="highlight"><em>Thunderbolt / USB 4</em></span> enables connectivity to high-performance storage devices, docks and external displays.<sup ><a class="footnote" href="#footnote-4" >1</a></sup></p></div>
+                                    
+                                        
+                                        <img src="resources/thunderbolt_usb.jpg" alt="iPad Pro in landscape orientation, screen displaying multiple photographs, external hard drive in front of iPad, attached by a cable" style="width: 100%; height:100%;">
+                                    
+                                   
+                                </div>
+                                <div>
+                                    
+                                    <h3 class="copy-columns11">Wireless connectivity. Blazing fast.</h3>
+                                
+                                      <div class="copycol">  <img src="resources/wireless__ea.jpg" alt="iPad Pro in landscape orientation, screen displaying a video game, PlayStation controller in front of the iPad">
+                                      </div>
+                                      <div class="flexdiv">
+                                      <div class="subject">
+                                    <ul class="feature-list">
+                                        <li class="feature">
+                                            <div class="feature-wrapper">
+                                                <div>
+                
+                                                        <img src="resources/icon_wifi__large.png"  alt="icon">
+                                                   
+                                                </div>
+                                                <p><span class="highlight"><em>Wi-Fi&nbsp;6E</em></span> delivers incredibly fast wireless connectivity so you can stream, download and share at high speeds.<sup ><a class="footnote" href="#footnote-11" aria-label="Footnote 8, Close" data-modal-close="">8</a></sup></p>
+                                            </div>
+                                        </li>
+                                        <li class="feature">
+                                            <div class="feature-wrapper">
+                                                <div>
+                                                    
+                                                        
+                                                        <img src="resources/icon_cellular__large.png" alt="icon">
+                                                   
+                                                </div>
+                                                <p ><span class="highlight"><em>5G</em></span> cellular capabilities let you stay connected to the fastest wireless networks when you’re on the go.<sup ><a class="footnote" href="#footnote-11" aria-label="Footnote 8, Close" data-modal-close="">8</a></sup></p>
+                                            </div>
+                                        </li>
+                                       
+                                    </ul>
+                                        <ul class="feature-list">
+                                            <li class="feature">
+                                                <div class="feature-wrapper">
+                                                    <div>                                             
+                                                    <img src="resources/icon_esim__large.png" alt="icon">
+                                                </div>
+                                                    <p >Now exclusively <span class="highlight"><em>eSIM</em></span>, enabling a fast, convenient and secure way to activate your cellular data plan directly on iPad&nbsp;Pro.<sup ><a class="footnote" href="#footnote-12" aria-label="Footnote 9, Close" data-modal-close="">9</a></sup></p>
+                                                    <p class="font11"><a href="/in/ipad/cellular/" class="icon-wrapper">Learn more about cellular for&nbsp;iPad ></a></p>
+                                                </div>
+                                            </li>
+                                       
+                                        <li class="feature">
+                                            <div class="feature-wrapper">
+                                                <div>
+                                                     <img src="resources/icon_bluetooth__large.png" alt="icon">                                      
+                                                </div>
+                                                <p ><span class="highlight"><em>Bluetooth 5.3</em></span> low-latency audio supports next-generation headsets and hearing aids that use Bluetooth&nbsp;LE.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                   
+                    <div class="closepopupdiv4">
+                        <button class="closepopup4 backdrop" onclick="closepopup9()"><i class="fa-solid fa-xmark" style="color: white; font-size:29px"></i></button></div>
+                    
+            </div></div>
+            </div>
+            <div id="scrollablediv11">
+                <div class="flexdiv backdrop">
+                <div class="modal-overlay" style="border-radius: 40px;margin-top:60px;margin-bottom:10px;">
+                <div class="hero112">
+                    <h1 class="hero-headline">Designed to make a difference.</h1>
+                    <img src="resources/earth.jpg" alt="Earth" style="border-radius:40px; width:100%; height:100%">
+                </div>
+                <div>
+                    <div class="flexdiv" style="margin-bottom:50px;margin-top:96px;">
+                    <img src="resources/icon_headline.png" alt="earth" style="width:60px;height:60px;">
+                  <h3 class="size"> Big steps towards a smaller footprint.</h3></div>	
+                    <div class="copycol">
+                    <img src="resources/ipad.jpg" alt="Earth"></div>
+                    <div class="flexdiv">
+                    <div class="copy">
+                        <ul style="display:flex; flex-direction:column;width:408px;margin-left:70px;">
+                        <div class="margin-bottom">iPad&nbsp;Pro contains more recycled materials than ever:</div>
+            
+                            <li class="margin-bottom" style="padding-left:10px; margin-left:30px;">100%&nbsp;recycled aluminium in the&nbsp;durable&nbsp;enclosure.</li>
+                            <li class="margin-bottom" style="padding-left:10px;margin-left:30px;">100%&nbsp;recycled rare earth elements&nbsp;in&nbsp;all&nbsp;iPad&nbsp;Pro magnets.</li>
+                            <li class="margin-bottom" style="padding-left:10px;margin-left:30px;">100% fibre-based packaging for iPad&nbsp;Pro, with 100%&nbsp;recycled or responsibly sourced wood fibres.<sup><a class="footnote" href="#footnote-13">10</a></sup></li>
+                           
+                        </ul>
+                        <ul style="font-size: 21px; font-weight: bold; width:360px;height:330px;margin-left:90px;">
+                        
+                          Our stores, offices and data centres are already carbon neutral. We’ve committed to making our entire carbon footprint neutral by&nbsp;2030.
+                        </ul>
+                    </div>
+                </div>
+                
+                </div>
+                
+                    
+               
+               <div class="font"> <a href="/in/environment/" class="icon-wrapper">More on Apple and the Environment ></a>  
+            </div>
+            <div style="display:flex;justify-content:center;">
+                <hr>  
+            </div>
+                
+                <div>
+                    <h3 class="headline">          
+                            <img src="resources/icon_headline_privacy.png" alt="apple" style="width: 50px; height:50px;">
+                        
+                         Privacy. That’s Apple.
+                    </h3>
+                    
+                       <div class="copycol">
+                        <img src="resources/ipad_privacy.jpg"  alt="iPad Pro in landscape orientation, screen displaying userʼs Health app summary">
+                    </div> 
+                    <div class="flexdiv">
+                    <div class="copy-columns">
+                        <div class="settle">
+                                <img src="resources/icon_health_large.png" alt="health" style="margin-bottom: 10px;">
+                            <p class="modal-copy"><span class="highlight"><em>The Health&nbsp;app</em></span> makes it easy for you to access your health and fitness information — and encrypts it on device and in iCloud so no one can view your Health data without your permission.</p>
+                        </div>
+                        <div class="settle">
+                                <img src="resources/icon_passkeys_large.png"  alt="passkeys" style="margin-bottom: 10px;">
+                           
+                            <p class="modal-copy"><span class="highlight"><em>Passkeys</em></span> eliminate the need for passwords on apps and websites. Just use Touch&nbsp;ID or Face&nbsp;ID to&nbsp;authenticate. Simple and secure.</p>
+                        </div>
+                        <div class="settle">
+                                <img src="resources/icon_safari_large.png" alt="safari" style="margin-bottom: 10px;">               
+                            <p class="modal-copy"><span class="highlight"><em>Safari Private Browsing</em></span> locks browsing windows when they’re not being used, blocks known trackers from loading and&nbsp;removes identifying tracking data added to URLs as you browse.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="font">
+                    <a href="/in/privacy/"  class="icon-wrapper">More on Apple and Privacy ></a>
+                </div>
+                <div class="flexdiv">
+                    <hr>
+                </div>
+            </div>
+                <div>
+                    <h3 class="headline">     
+                            <img src="resources/icon_headline_accessibility___large.png"  alt="icon" style="margin-right: 10px; width: 56px;height:56px;">         
+                            iPad for all.
+                    </h3>
+                    
+                        
+                        <div class="copycol"><img src="resources/ipad_accessibility.jpg" alt="Landscape orientation, iPad Pro, user is on a FaceTime call, there is a section on the screen where the user can type to speak"></div>
+                   
+                    <div class="flexdiv">
+                    <div class="copy-columns">
+                        <div class="settle2">
+                            
+                                <img src="resources/icon_personal_voice_large.png"  alt="icon" style="margin-bottom:10px;">
+                            
+                            
+                            <p class="modal-copy ">If you’re at risk of losing your voice, <span class="highlight"><em>Personal Voice</em></span> lets you create a voice that sounds like you, so you’ll be able to communicate with it using Live&nbsp;Speech for calls and conversations.</p>
+                        </div>
+                        <div class="settle2">
+                            
+                                
+                                <img src="resources/icon_assistive_access_large.png"  alt="icon" style="margin-bottom:10px;">
+                            
+                            
+                            <p class="modal-copy"><span class="highlight"><em>Assistive Access</em></span> offers users a distinctive interface with high‑contrast buttons and large text labels, as&nbsp;well as tools to help individuals and trusted supporters adjust the&nbsp;experience in specific&nbsp;apps.</p>
+                        </div>
+                        <div class="settle2">
+                            
+                                
+                                <img src="resources/icon_voice_over_large.png" alt="icon" style="margin-bottom:10px;">
+                            
+                            
+                            <p class="modal-copy"><span class="highlight"><em>VoiceOver</em></span> gives audible descriptions of what’s on your screen — from battery level to who’s calling to which app your finger is on. You can also adjust the speaking rate and pitch to suit your&nbsp;needs.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="font">
+                    <a href="/in/accessibility/" class="icon-wrapper" style="margin-top: 80px; margin-bottom:60px;">More on built-in accessibility features ></a> </div>
+                </div>
+                <div class="closepopupdiv3">
+                    <button class="closepopup331 backdrop" onclick="closepopup10()"><i class="fa-solid fa-xmark" style="color: white; font-size:25px"></i></button></div>
+                </div></div>
+            </div>
 </body>
 
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="anime.js"></script>
 <script src="anime.min.js"></script>
 <script src="navbar.js"></script>
-
-
-<!-- <script src="vid.js"></script> -->
+<script src="popupanimation.js"></script>
+<script src="popups.js"></script>
+<script src="vid.js"></script>
 <script src="script.js"></script>
 <script src="pt5.js"></script>
 <script src="pt1.js "></script>
 <script src="pt2.js "></script>
 <script src="pt3.js"></script>
 <script src="pt4.js"></script>
-
+<script src="vid2.js"></script>
+<script src="vid3.js"></script>
 
 <script src="pt2new1.js "></script>
 
