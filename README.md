@@ -41,9 +41,4 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 This project is licensed under the **MIT License**.
 
-## 📬 Contact
-
-- **GitHub**: [Keshav200613](https://github.com/Keshav200613)
-- **Email**: [keshav@example.com](mailto:keshav@example.com)
-
 
